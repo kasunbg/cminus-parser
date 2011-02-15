@@ -17,11 +17,6 @@ options {
  * PARSER RULES
  *-----------------------------------------------------------------*/
   
-//program: (ID | DIGIT)* ;
-//program	
-//	:	declarationList
-//	;  
-	  
 program
 	:	 declarationList
 	;		 
