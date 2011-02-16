@@ -17,13 +17,13 @@ options {
  * PARSER RULES
  *-----------------------------------------------------------------*/
   
-program
+program 
 	:	 declarationList
 	;		 
 	 	
-declarationList	
+declarationList	 
 	:	declaration+
-	;
+	; 
 
 declaration	
 	:	varDeclaration | funDeclaration
