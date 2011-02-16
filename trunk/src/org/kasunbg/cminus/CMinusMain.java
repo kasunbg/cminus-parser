@@ -8,7 +8,6 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.antlr.grammar.v3.ANTLRv3Parser.throwsSpec_return;
 import org.antlr.runtime.ANTLRStringStream;
 import org.antlr.runtime.CharStream;
 import org.antlr.runtime.CommonTokenStream;
@@ -29,15 +28,19 @@ public class CMinusMain {
 			file = new File("samples/sample2.cm");
 		}
 		
-//		main.generateTokenTypes("src/org/kasunbg/cminus/CMinus.tokens");
-		
 		main.tokenize(file);		
 		main.parser(file);			
 	} 
-
+	
+	/**
+	 * Tokenizes the given file's contents and outputs details of each token.
+	 * For each token, following details are displayed.
+	 * Line Number | Token Text | Token Type | Token Index 
+	 * @param file the content needed to be tokenized 
+	 */
 	void tokenize(File file) {	
 		
-		Map<Integer, String > tokenMap; // = new HashMap<Integer, String>();
+		Map<Integer, String > tokenMap;
 		tokenMap = generateTokenTypes("src/org/kasunbg/cminus/CMinus.tokens");
 		
 		try {
@@ -80,8 +83,7 @@ public class CMinusMain {
 			while ((temp = bf.readLine()) != null) {
 				input += temp+"\n";
 			}		
-			//			System.out.println(input);
-
+			
 			CharStream charStream = new ANTLRStringStream(input);
 			CMinusLexer lexer = new CMinusLexer(charStream);				
 			TokenStream tokenStream = new CommonTokenStream(lexer);
