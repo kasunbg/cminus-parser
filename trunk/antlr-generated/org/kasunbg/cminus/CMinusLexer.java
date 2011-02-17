@@ -1,4 +1,4 @@
-// $ANTLR 3.2 Sep 23, 2009 12:02:23 /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g 2011-02-16 15:13:13
+// $ANTLR 3.2 Sep 23, 2009 12:02:23 /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g 2011-02-16 16:34:16
  
   package org.kasunbg.cminus;  
 
@@ -61,8 +61,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = KEYWORD_ELSE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:156:14: ( 'else' )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:156:16: 'else'
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:169:14: ( 'else' )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:169:16: 'else'
             {
             match("else"); 
 
@@ -82,8 +82,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = KEYWORD_IF;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:157:12: ( 'if' )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:157:14: 'if'
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:170:12: ( 'if' )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:170:14: 'if'
             {
             match("if"); 
 
@@ -103,8 +103,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = KEYWORD_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:158:13: ( 'int' )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:158:15: 'int'
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:171:13: ( 'int' )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:171:15: 'int'
             {
             match("int"); 
 
@@ -124,8 +124,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = KEYWORD_RETURN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:159:16: ( 'return' )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:159:18: 'return'
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:172:16: ( 'return' )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:172:18: 'return'
             {
             match("return"); 
 
@@ -145,8 +145,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = KEYWORD_VOID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:160:14: ( 'void' )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:160:16: 'void'
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:173:14: ( 'void' )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:173:16: 'void'
             {
             match("void"); 
 
@@ -166,8 +166,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = KEYWORD_WHILE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:161:15: ( 'while' )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:161:17: 'while'
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:174:15: ( 'while' )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:174:17: 'while'
             {
             match("while"); 
 
@@ -187,8 +187,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = PLUS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:163:6: ( '+' )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:163:8: '+'
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:176:6: ( '+' )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:176:8: '+'
             {
             match('+'); 
 
@@ -207,8 +207,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = MINUS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:164:7: ( '-' )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:164:9: '-'
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:177:7: ( '-' )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:177:9: '-'
             {
             match('-'); 
 
@@ -227,8 +227,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = MULTI;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:165:7: ( '*' )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:165:9: '*'
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:178:7: ( '*' )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:178:9: '*'
             {
             match('*'); 
 
@@ -247,8 +247,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = DIVISION;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:166:10: ( '/' )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:166:12: '/'
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:179:10: ( '/' )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:179:12: '/'
             {
             match('/'); 
 
@@ -267,8 +267,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = LESS_THAN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:167:11: ( '<' )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:167:13: '<'
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:180:11: ( '<' )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:180:13: '<'
             {
             match('<'); 
 
@@ -287,8 +287,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = LESS_THAN_OR_EQUAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:168:20: ( '<=' )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:168:22: '<='
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:181:20: ( '<=' )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:181:22: '<='
             {
             match("<="); 
 
@@ -308,8 +308,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = GREATER_THAN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:169:14: ( '>' )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:169:16: '>'
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:182:14: ( '>' )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:182:16: '>'
             {
             match('>'); 
 
@@ -328,8 +328,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = GREATER_THAN_OR_EQUAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:170:23: ( '>=' )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:170:25: '>='
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:183:23: ( '>=' )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:183:25: '>='
             {
             match(">="); 
 
@@ -349,8 +349,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = EQUAL_EQUAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:171:13: ( '==' )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:171:15: '=='
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:184:13: ( '==' )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:184:15: '=='
             {
             match("=="); 
 
@@ -370,8 +370,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = NOT_EQUAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:172:11: ( '!=' )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:172:13: '!='
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:185:11: ( '!=' )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:185:13: '!='
             {
             match("!="); 
 
@@ -391,8 +391,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = EQUAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:173:7: ( '=' )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:173:9: '='
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:186:7: ( '=' )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:186:9: '='
             {
             match('='); 
 
@@ -411,8 +411,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = SEMICOLON;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:174:11: ( ';' )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:174:13: ';'
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:187:11: ( ';' )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:187:13: ';'
             {
             match(';'); 
 
@@ -431,8 +431,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = COMMA;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:175:7: ( ',' )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:175:9: ','
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:188:7: ( ',' )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:188:9: ','
             {
             match(','); 
 
@@ -451,8 +451,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = LEFT_PAREN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:177:12: ( '(' )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:177:14: '('
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:190:12: ( '(' )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:190:14: '('
             {
             match('('); 
 
@@ -471,8 +471,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = RIGHT_PAREN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:178:13: ( ')' )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:178:15: ')'
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:191:13: ( ')' )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:191:15: ')'
             {
             match(')'); 
 
@@ -491,8 +491,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = LEFT_SQUARE_BRACKET;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:179:21: ( '[' )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:179:23: '['
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:192:21: ( '[' )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:192:23: '['
             {
             match('['); 
 
@@ -511,8 +511,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = RIGHT_SQUARE_BRACKET;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:180:22: ( ']' )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:180:24: ']'
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:193:22: ( ']' )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:193:24: ']'
             {
             match(']'); 
 
@@ -531,8 +531,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = LEFT_BRACE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:181:12: ( '{' )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:181:14: '{'
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:194:12: ( '{' )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:194:14: '{'
             {
             match('{'); 
 
@@ -551,8 +551,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = RIGHT_BRACE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:182:13: ( '}' )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:182:15: '}'
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:195:13: ( '}' )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:195:15: '}'
             {
             match('}'); 
 
@@ -571,12 +571,12 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:186:3: ( '/*' ( . )* '*/' ( NEWLINE )? )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:186:5: '/*' ( . )* '*/' ( NEWLINE )?
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:199:3: ( '/*' ( . )* '*/' ( NEWLINE )? )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:199:5: '/*' ( . )* '*/' ( NEWLINE )?
             {
             match("/*"); 
 
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:186:10: ( . )*
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:199:10: ( . )*
             loop1:
             do {
                 int alt1=2;
@@ -601,7 +601,7 @@ public class CMinusLexer extends Lexer {
 
                 switch (alt1) {
             	case 1 :
-            	    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:186:10: .
+            	    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:199:10: .
             	    {
             	    matchAny(); 
 
@@ -615,7 +615,7 @@ public class CMinusLexer extends Lexer {
 
             match("*/"); 
 
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:186:18: ( NEWLINE )?
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:199:18: ( NEWLINE )?
             int alt2=2;
             int LA2_0 = input.LA(1);
 
@@ -624,7 +624,7 @@ public class CMinusLexer extends Lexer {
             }
             switch (alt2) {
                 case 1 :
-                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:186:18: NEWLINE
+                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:199:18: NEWLINE
                     {
                     mNEWLINE(); 
 
@@ -648,8 +648,8 @@ public class CMinusLexer extends Lexer {
     // $ANTLR start "LETTER"
     public final void mLETTER() throws RecognitionException {
         try {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:188:17: ( ( 'a' .. 'z' | 'A' .. 'Z' ) )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:188:19: ( 'a' .. 'z' | 'A' .. 'Z' )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:201:17: ( ( 'a' .. 'z' | 'A' .. 'Z' ) )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:201:19: ( 'a' .. 'z' | 'A' .. 'Z' )
             {
             if ( (input.LA(1)>='A' && input.LA(1)<='Z')||(input.LA(1)>='a' && input.LA(1)<='z') ) {
                 input.consume();
@@ -672,11 +672,11 @@ public class CMinusLexer extends Lexer {
     // $ANTLR start "DIGIT"
     public final void mDIGIT() throws RecognitionException {
         try {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:189:16: ( ( '0' .. '9' ) )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:189:18: ( '0' .. '9' )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:202:16: ( ( '0' .. '9' ) )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:202:18: ( '0' .. '9' )
             {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:189:18: ( '0' .. '9' )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:189:19: '0' .. '9'
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:202:18: ( '0' .. '9' )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:202:19: '0' .. '9'
             {
             matchRange('0','9'); 
 
@@ -696,11 +696,11 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:190:4: ( LETTER ( LETTER )* )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:190:6: LETTER ( LETTER )*
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:203:4: ( LETTER ( LETTER )* )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:203:6: LETTER ( LETTER )*
             {
             mLETTER(); 
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:190:13: ( LETTER )*
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:203:13: ( LETTER )*
             loop3:
             do {
                 int alt3=2;
@@ -713,7 +713,7 @@ public class CMinusLexer extends Lexer {
 
                 switch (alt3) {
             	case 1 :
-            	    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:190:13: LETTER
+            	    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:203:13: LETTER
             	    {
             	    mLETTER(); 
 
@@ -741,11 +741,11 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = NUM;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:191:5: ( DIGIT ( DIGIT )* )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:191:7: DIGIT ( DIGIT )*
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:204:5: ( DIGIT ( DIGIT )* )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:204:7: DIGIT ( DIGIT )*
             {
             mDIGIT(); 
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:191:13: ( DIGIT )*
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:204:13: ( DIGIT )*
             loop4:
             do {
                 int alt4=2;
@@ -758,7 +758,7 @@ public class CMinusLexer extends Lexer {
 
                 switch (alt4) {
             	case 1 :
-            	    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:191:13: DIGIT
+            	    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:204:13: DIGIT
             	    {
             	    mDIGIT(); 
 
@@ -784,8 +784,8 @@ public class CMinusLexer extends Lexer {
     // $ANTLR start "NEWLINE"
     public final void mNEWLINE() throws RecognitionException {
         try {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:194:18: ( ( '\\r' | '\\n' ) )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:194:20: ( '\\r' | '\\n' )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:207:18: ( ( '\\r' | '\\n' ) )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:207:20: ( '\\r' | '\\n' )
             {
             if ( input.LA(1)=='\n'||input.LA(1)=='\r' ) {
                 input.consume();
@@ -810,10 +810,10 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = WHITESPACE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:195:12: ( ( ' ' | '\\t' | NEWLINE )+ )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:195:14: ( ' ' | '\\t' | NEWLINE )+
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:208:12: ( ( ' ' | '\\t' | NEWLINE )+ )
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:208:14: ( ' ' | '\\t' | NEWLINE )+
             {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:195:14: ( ' ' | '\\t' | NEWLINE )+
+            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser/trunk/src/org/kasunbg/cminus/CMinus.g:208:14: ( ' ' | '\\t' | NEWLINE )+
             int cnt5=0;
             loop5:
             do {
