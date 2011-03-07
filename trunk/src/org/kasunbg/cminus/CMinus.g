@@ -31,7 +31,7 @@ options {
  * PARSER RULES
  *-----------------------------------------------------------------*/
   
-program 
+program  
 	:	 declarationList
 	;		 
 	 	
@@ -110,7 +110,7 @@ returnStmt
 	;			
 	
 expression 
-	:	(var '=') => var '=' expression 
+	:	(var EQUAL) => var EQUAL expression 
 	|	simpleExpression
 	;		 		 					
 

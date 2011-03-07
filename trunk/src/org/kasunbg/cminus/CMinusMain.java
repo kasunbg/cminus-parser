@@ -24,7 +24,7 @@ public class CMinusMain {
 		if(samplePath.length != 0){
 			file = new File(samplePath[0]);
 		} else {
-			System.out.println("[Warning] No parameter specified. Using a samples/sample*.cm file to tokenize and parse.\nj");
+			System.out.println("No parameter specified. Using a samples/sample*.cm file to tokenize and parse.\n");
 			file = new File("samples/sample2.cm");
 		}
 		
@@ -88,10 +88,11 @@ public class CMinusMain {
 			CMinusLexer lexer = new CMinusLexer(charStream);				
 			TokenStream tokenStream = new CommonTokenStream(lexer);
 			CMinusParser parser = new CMinusParser(tokenStream);
-			
-			System.out.println("Parsing...");
+						
+			System.out.println("\nStarted Parsing...");
 			parser.program();	//calls the Start symbol 'program' to parse the content.
-			System.out.println("Parsed the content successfully.");
+			System.out.println("\nParsed...");
+//			System.out.println("Parsed the content successfully.");
 			
 		} catch (FileNotFoundException e) {
 			System.out.println("Sample file" + file.getName() + " not found.");
@@ -110,7 +111,13 @@ public class CMinusMain {
 	private Map<Integer, String> generateTokenTypes(String filename) {
 		Map<Integer, String> tokenMap = new HashMap<Integer, String>();
 		try {
-			BufferedReader bf = new BufferedReader(new FileReader(filename));
+			BufferedReader bf;
+			try {
+				bf = new BufferedReader(new FileReader(filename));
+			} catch (FileNotFoundException ex) {
+//				System.out.println(filename + "cannot be found, Trying with org/kasunbg/cminus/CMinus.tokens");
+				bf = new BufferedReader(new FileReader("org/kasunbg/cminus/CMinus.tokens"));
+			}
 			
 			String temp;
 			char tokenIdSeparator = '='; 	
