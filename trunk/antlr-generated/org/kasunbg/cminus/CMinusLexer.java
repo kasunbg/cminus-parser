@@ -1,4 +1,4 @@
-// $ANTLR 3.2 Sep 23, 2009 12:02:23 /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g 2011-03-16 21:36:25
+// $ANTLR 3.2 Sep 23, 2009 12:02:23 src/org/kasunbg/cminus/CMinus.g 2011-03-17 00:42:21
   
   package org.kasunbg.cminus;  
 
@@ -54,15 +54,15 @@ public class CMinusLexer extends Lexer {
         super(input,state);
 
     }
-    public String getGrammarFileName() { return "/home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g"; }
+    public String getGrammarFileName() { return "src/org/kasunbg/cminus/CMinus.g"; }
 
     // $ANTLR start "KEYWORD_ELSE"
     public final void mKEYWORD_ELSE() throws RecognitionException {
         try {
             int _type = KEYWORD_ELSE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:171:14: ( 'else' )
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:171:16: 'else'
+            // src/org/kasunbg/cminus/CMinus.g:171:14: ( 'else' )
+            // src/org/kasunbg/cminus/CMinus.g:171:16: 'else'
             {
             match("else"); 
 
@@ -82,8 +82,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = KEYWORD_IF;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:172:12: ( 'if' )
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:172:14: 'if'
+            // src/org/kasunbg/cminus/CMinus.g:172:12: ( 'if' )
+            // src/org/kasunbg/cminus/CMinus.g:172:14: 'if'
             {
             match("if"); 
 
@@ -103,8 +103,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = KEYWORD_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:173:13: ( 'int' )
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:173:15: 'int'
+            // src/org/kasunbg/cminus/CMinus.g:173:13: ( 'int' )
+            // src/org/kasunbg/cminus/CMinus.g:173:15: 'int'
             {
             match("int"); 
 
@@ -124,8 +124,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = KEYWORD_RETURN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:174:16: ( 'return' )
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:174:18: 'return'
+            // src/org/kasunbg/cminus/CMinus.g:174:16: ( 'return' )
+            // src/org/kasunbg/cminus/CMinus.g:174:18: 'return'
             {
             match("return"); 
 
@@ -145,8 +145,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = KEYWORD_VOID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:175:14: ( 'void' )
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:175:16: 'void'
+            // src/org/kasunbg/cminus/CMinus.g:175:14: ( 'void' )
+            // src/org/kasunbg/cminus/CMinus.g:175:16: 'void'
             {
             match("void"); 
 
@@ -166,8 +166,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = KEYWORD_WHILE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:176:15: ( 'while' )
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:176:17: 'while'
+            // src/org/kasunbg/cminus/CMinus.g:176:15: ( 'while' )
+            // src/org/kasunbg/cminus/CMinus.g:176:17: 'while'
             {
             match("while"); 
 
@@ -187,8 +187,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = PLUS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:178:6: ( '+' )
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:178:8: '+'
+            // src/org/kasunbg/cminus/CMinus.g:178:6: ( '+' )
+            // src/org/kasunbg/cminus/CMinus.g:178:8: '+'
             {
             match('+'); 
 
@@ -207,8 +207,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = MINUS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:179:7: ( '-' )
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:179:9: '-'
+            // src/org/kasunbg/cminus/CMinus.g:179:7: ( '-' )
+            // src/org/kasunbg/cminus/CMinus.g:179:9: '-'
             {
             match('-'); 
 
@@ -227,8 +227,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = MULTI;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:180:7: ( '*' )
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:180:9: '*'
+            // src/org/kasunbg/cminus/CMinus.g:180:7: ( '*' )
+            // src/org/kasunbg/cminus/CMinus.g:180:9: '*'
             {
             match('*'); 
 
@@ -247,8 +247,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = DIVISION;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:181:10: ( '/' )
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:181:12: '/'
+            // src/org/kasunbg/cminus/CMinus.g:181:10: ( '/' )
+            // src/org/kasunbg/cminus/CMinus.g:181:12: '/'
             {
             match('/'); 
 
@@ -267,8 +267,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = LESS_THAN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:182:11: ( '<' )
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:182:13: '<'
+            // src/org/kasunbg/cminus/CMinus.g:182:11: ( '<' )
+            // src/org/kasunbg/cminus/CMinus.g:182:13: '<'
             {
             match('<'); 
 
@@ -287,8 +287,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = LESS_THAN_OR_EQUAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:183:20: ( '<=' )
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:183:22: '<='
+            // src/org/kasunbg/cminus/CMinus.g:183:20: ( '<=' )
+            // src/org/kasunbg/cminus/CMinus.g:183:22: '<='
             {
             match("<="); 
 
@@ -308,8 +308,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = GREATER_THAN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:184:14: ( '>' )
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:184:16: '>'
+            // src/org/kasunbg/cminus/CMinus.g:184:14: ( '>' )
+            // src/org/kasunbg/cminus/CMinus.g:184:16: '>'
             {
             match('>'); 
 
@@ -328,8 +328,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = GREATER_THAN_OR_EQUAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:185:23: ( '>=' )
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:185:25: '>='
+            // src/org/kasunbg/cminus/CMinus.g:185:23: ( '>=' )
+            // src/org/kasunbg/cminus/CMinus.g:185:25: '>='
             {
             match(">="); 
 
@@ -349,8 +349,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = EQUAL_EQUAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:186:13: ( '==' )
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:186:15: '=='
+            // src/org/kasunbg/cminus/CMinus.g:186:13: ( '==' )
+            // src/org/kasunbg/cminus/CMinus.g:186:15: '=='
             {
             match("=="); 
 
@@ -370,8 +370,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = NOT_EQUAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:187:11: ( '!=' )
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:187:13: '!='
+            // src/org/kasunbg/cminus/CMinus.g:187:11: ( '!=' )
+            // src/org/kasunbg/cminus/CMinus.g:187:13: '!='
             {
             match("!="); 
 
@@ -391,8 +391,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = EQUAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:188:7: ( '=' )
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:188:9: '='
+            // src/org/kasunbg/cminus/CMinus.g:188:7: ( '=' )
+            // src/org/kasunbg/cminus/CMinus.g:188:9: '='
             {
             match('='); 
 
@@ -411,8 +411,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = SEMICOLON;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:189:11: ( ';' )
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:189:13: ';'
+            // src/org/kasunbg/cminus/CMinus.g:189:11: ( ';' )
+            // src/org/kasunbg/cminus/CMinus.g:189:13: ';'
             {
             match(';'); 
 
@@ -431,8 +431,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = COMMA;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:190:7: ( ',' )
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:190:9: ','
+            // src/org/kasunbg/cminus/CMinus.g:190:7: ( ',' )
+            // src/org/kasunbg/cminus/CMinus.g:190:9: ','
             {
             match(','); 
 
@@ -451,8 +451,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = LEFT_PAREN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:192:12: ( '(' )
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:192:14: '('
+            // src/org/kasunbg/cminus/CMinus.g:192:12: ( '(' )
+            // src/org/kasunbg/cminus/CMinus.g:192:14: '('
             {
             match('('); 
 
@@ -471,8 +471,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = RIGHT_PAREN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:193:13: ( ')' )
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:193:15: ')'
+            // src/org/kasunbg/cminus/CMinus.g:193:13: ( ')' )
+            // src/org/kasunbg/cminus/CMinus.g:193:15: ')'
             {
             match(')'); 
 
@@ -491,8 +491,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = LEFT_SQUARE_BRACKET;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:194:21: ( '[' )
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:194:23: '['
+            // src/org/kasunbg/cminus/CMinus.g:194:21: ( '[' )
+            // src/org/kasunbg/cminus/CMinus.g:194:23: '['
             {
             match('['); 
 
@@ -511,8 +511,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = RIGHT_SQUARE_BRACKET;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:195:22: ( ']' )
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:195:24: ']'
+            // src/org/kasunbg/cminus/CMinus.g:195:22: ( ']' )
+            // src/org/kasunbg/cminus/CMinus.g:195:24: ']'
             {
             match(']'); 
 
@@ -531,8 +531,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = LEFT_BRACE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:196:12: ( '{' )
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:196:14: '{'
+            // src/org/kasunbg/cminus/CMinus.g:196:12: ( '{' )
+            // src/org/kasunbg/cminus/CMinus.g:196:14: '{'
             {
             match('{'); 
 
@@ -551,8 +551,8 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = RIGHT_BRACE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:197:13: ( '}' )
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:197:15: '}'
+            // src/org/kasunbg/cminus/CMinus.g:197:13: ( '}' )
+            // src/org/kasunbg/cminus/CMinus.g:197:15: '}'
             {
             match('}'); 
 
@@ -571,12 +571,12 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:201:3: ( '/*' ( . )* '*/' ( NEWLINE )? )
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:201:5: '/*' ( . )* '*/' ( NEWLINE )?
+            // src/org/kasunbg/cminus/CMinus.g:201:3: ( '/*' ( . )* '*/' ( NEWLINE )? )
+            // src/org/kasunbg/cminus/CMinus.g:201:5: '/*' ( . )* '*/' ( NEWLINE )?
             {
             match("/*"); 
 
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:201:10: ( . )*
+            // src/org/kasunbg/cminus/CMinus.g:201:10: ( . )*
             loop1:
             do {
                 int alt1=2;
@@ -601,7 +601,7 @@ public class CMinusLexer extends Lexer {
 
                 switch (alt1) {
             	case 1 :
-            	    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:201:10: .
+            	    // src/org/kasunbg/cminus/CMinus.g:201:10: .
             	    {
             	    matchAny(); 
 
@@ -615,7 +615,7 @@ public class CMinusLexer extends Lexer {
 
             match("*/"); 
 
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:201:18: ( NEWLINE )?
+            // src/org/kasunbg/cminus/CMinus.g:201:18: ( NEWLINE )?
             int alt2=2;
             int LA2_0 = input.LA(1);
 
@@ -624,7 +624,7 @@ public class CMinusLexer extends Lexer {
             }
             switch (alt2) {
                 case 1 :
-                    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:201:18: NEWLINE
+                    // src/org/kasunbg/cminus/CMinus.g:201:18: NEWLINE
                     {
                     mNEWLINE(); 
 
@@ -648,8 +648,8 @@ public class CMinusLexer extends Lexer {
     // $ANTLR start "LETTER"
     public final void mLETTER() throws RecognitionException {
         try {
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:203:17: ( ( 'a' .. 'z' | 'A' .. 'Z' ) )
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:203:19: ( 'a' .. 'z' | 'A' .. 'Z' )
+            // src/org/kasunbg/cminus/CMinus.g:203:17: ( ( 'a' .. 'z' | 'A' .. 'Z' ) )
+            // src/org/kasunbg/cminus/CMinus.g:203:19: ( 'a' .. 'z' | 'A' .. 'Z' )
             {
             if ( (input.LA(1)>='A' && input.LA(1)<='Z')||(input.LA(1)>='a' && input.LA(1)<='z') ) {
                 input.consume();
@@ -672,11 +672,11 @@ public class CMinusLexer extends Lexer {
     // $ANTLR start "DIGIT"
     public final void mDIGIT() throws RecognitionException {
         try {
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:204:16: ( ( '0' .. '9' ) )
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:204:18: ( '0' .. '9' )
+            // src/org/kasunbg/cminus/CMinus.g:204:16: ( ( '0' .. '9' ) )
+            // src/org/kasunbg/cminus/CMinus.g:204:18: ( '0' .. '9' )
             {
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:204:18: ( '0' .. '9' )
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:204:19: '0' .. '9'
+            // src/org/kasunbg/cminus/CMinus.g:204:18: ( '0' .. '9' )
+            // src/org/kasunbg/cminus/CMinus.g:204:19: '0' .. '9'
             {
             matchRange('0','9'); 
 
@@ -696,11 +696,11 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:205:4: ( LETTER ( LETTER )* )
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:205:6: LETTER ( LETTER )*
+            // src/org/kasunbg/cminus/CMinus.g:205:4: ( LETTER ( LETTER )* )
+            // src/org/kasunbg/cminus/CMinus.g:205:6: LETTER ( LETTER )*
             {
             mLETTER(); 
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:205:13: ( LETTER )*
+            // src/org/kasunbg/cminus/CMinus.g:205:13: ( LETTER )*
             loop3:
             do {
                 int alt3=2;
@@ -713,7 +713,7 @@ public class CMinusLexer extends Lexer {
 
                 switch (alt3) {
             	case 1 :
-            	    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:205:13: LETTER
+            	    // src/org/kasunbg/cminus/CMinus.g:205:13: LETTER
             	    {
             	    mLETTER(); 
 
@@ -741,11 +741,11 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = NUM;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:206:5: ( DIGIT ( DIGIT )* )
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:206:7: DIGIT ( DIGIT )*
+            // src/org/kasunbg/cminus/CMinus.g:206:5: ( DIGIT ( DIGIT )* )
+            // src/org/kasunbg/cminus/CMinus.g:206:7: DIGIT ( DIGIT )*
             {
             mDIGIT(); 
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:206:13: ( DIGIT )*
+            // src/org/kasunbg/cminus/CMinus.g:206:13: ( DIGIT )*
             loop4:
             do {
                 int alt4=2;
@@ -758,7 +758,7 @@ public class CMinusLexer extends Lexer {
 
                 switch (alt4) {
             	case 1 :
-            	    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:206:13: DIGIT
+            	    // src/org/kasunbg/cminus/CMinus.g:206:13: DIGIT
             	    {
             	    mDIGIT(); 
 
@@ -784,8 +784,8 @@ public class CMinusLexer extends Lexer {
     // $ANTLR start "NEWLINE"
     public final void mNEWLINE() throws RecognitionException {
         try {
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:209:18: ( ( '\\r' | '\\n' ) )
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:209:20: ( '\\r' | '\\n' )
+            // src/org/kasunbg/cminus/CMinus.g:209:18: ( ( '\\r' | '\\n' ) )
+            // src/org/kasunbg/cminus/CMinus.g:209:20: ( '\\r' | '\\n' )
             {
             if ( input.LA(1)=='\n'||input.LA(1)=='\r' ) {
                 input.consume();
@@ -810,10 +810,10 @@ public class CMinusLexer extends Lexer {
         try {
             int _type = WHITESPACE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:210:12: ( ( ' ' | '\\t' | NEWLINE )+ )
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:210:14: ( ' ' | '\\t' | NEWLINE )+
+            // src/org/kasunbg/cminus/CMinus.g:210:12: ( ( ' ' | '\\t' | NEWLINE )+ )
+            // src/org/kasunbg/cminus/CMinus.g:210:14: ( ' ' | '\\t' | NEWLINE )+
             {
-            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:210:14: ( ' ' | '\\t' | NEWLINE )+
+            // src/org/kasunbg/cminus/CMinus.g:210:14: ( ' ' | '\\t' | NEWLINE )+
             int cnt5=0;
             loop5:
             do {
@@ -827,7 +827,7 @@ public class CMinusLexer extends Lexer {
 
                 switch (alt5) {
             	case 1 :
-            	    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:
+            	    // src/org/kasunbg/cminus/CMinus.g:
             	    {
             	    if ( (input.LA(1)>='\t' && input.LA(1)<='\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
             	        input.consume();
@@ -864,208 +864,208 @@ public class CMinusLexer extends Lexer {
     // $ANTLR end "WHITESPACE"
 
     public void mTokens() throws RecognitionException {
-        // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:1:8: ( KEYWORD_ELSE | KEYWORD_IF | KEYWORD_INT | KEYWORD_RETURN | KEYWORD_VOID | KEYWORD_WHILE | PLUS | MINUS | MULTI | DIVISION | LESS_THAN | LESS_THAN_OR_EQUAL | GREATER_THAN | GREATER_THAN_OR_EQUAL | EQUAL_EQUAL | NOT_EQUAL | EQUAL | SEMICOLON | COMMA | LEFT_PAREN | RIGHT_PAREN | LEFT_SQUARE_BRACKET | RIGHT_SQUARE_BRACKET | LEFT_BRACE | RIGHT_BRACE | COMMENT | ID | NUM | WHITESPACE )
+        // src/org/kasunbg/cminus/CMinus.g:1:8: ( KEYWORD_ELSE | KEYWORD_IF | KEYWORD_INT | KEYWORD_RETURN | KEYWORD_VOID | KEYWORD_WHILE | PLUS | MINUS | MULTI | DIVISION | LESS_THAN | LESS_THAN_OR_EQUAL | GREATER_THAN | GREATER_THAN_OR_EQUAL | EQUAL_EQUAL | NOT_EQUAL | EQUAL | SEMICOLON | COMMA | LEFT_PAREN | RIGHT_PAREN | LEFT_SQUARE_BRACKET | RIGHT_SQUARE_BRACKET | LEFT_BRACE | RIGHT_BRACE | COMMENT | ID | NUM | WHITESPACE )
         int alt6=29;
         alt6 = dfa6.predict(input);
         switch (alt6) {
             case 1 :
-                // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:1:10: KEYWORD_ELSE
+                // src/org/kasunbg/cminus/CMinus.g:1:10: KEYWORD_ELSE
                 {
                 mKEYWORD_ELSE(); 
 
                 }
                 break;
             case 2 :
-                // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:1:23: KEYWORD_IF
+                // src/org/kasunbg/cminus/CMinus.g:1:23: KEYWORD_IF
                 {
                 mKEYWORD_IF(); 
 
                 }
                 break;
             case 3 :
-                // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:1:34: KEYWORD_INT
+                // src/org/kasunbg/cminus/CMinus.g:1:34: KEYWORD_INT
                 {
                 mKEYWORD_INT(); 
 
                 }
                 break;
             case 4 :
-                // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:1:46: KEYWORD_RETURN
+                // src/org/kasunbg/cminus/CMinus.g:1:46: KEYWORD_RETURN
                 {
                 mKEYWORD_RETURN(); 
 
                 }
                 break;
             case 5 :
-                // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:1:61: KEYWORD_VOID
+                // src/org/kasunbg/cminus/CMinus.g:1:61: KEYWORD_VOID
                 {
                 mKEYWORD_VOID(); 
 
                 }
                 break;
             case 6 :
-                // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:1:74: KEYWORD_WHILE
+                // src/org/kasunbg/cminus/CMinus.g:1:74: KEYWORD_WHILE
                 {
                 mKEYWORD_WHILE(); 
 
                 }
                 break;
             case 7 :
-                // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:1:88: PLUS
+                // src/org/kasunbg/cminus/CMinus.g:1:88: PLUS
                 {
                 mPLUS(); 
 
                 }
                 break;
             case 8 :
-                // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:1:93: MINUS
+                // src/org/kasunbg/cminus/CMinus.g:1:93: MINUS
                 {
                 mMINUS(); 
 
                 }
                 break;
             case 9 :
-                // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:1:99: MULTI
+                // src/org/kasunbg/cminus/CMinus.g:1:99: MULTI
                 {
                 mMULTI(); 
 
                 }
                 break;
             case 10 :
-                // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:1:105: DIVISION
+                // src/org/kasunbg/cminus/CMinus.g:1:105: DIVISION
                 {
                 mDIVISION(); 
 
                 }
                 break;
             case 11 :
-                // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:1:114: LESS_THAN
+                // src/org/kasunbg/cminus/CMinus.g:1:114: LESS_THAN
                 {
                 mLESS_THAN(); 
 
                 }
                 break;
             case 12 :
-                // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:1:124: LESS_THAN_OR_EQUAL
+                // src/org/kasunbg/cminus/CMinus.g:1:124: LESS_THAN_OR_EQUAL
                 {
                 mLESS_THAN_OR_EQUAL(); 
 
                 }
                 break;
             case 13 :
-                // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:1:143: GREATER_THAN
+                // src/org/kasunbg/cminus/CMinus.g:1:143: GREATER_THAN
                 {
                 mGREATER_THAN(); 
 
                 }
                 break;
             case 14 :
-                // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:1:156: GREATER_THAN_OR_EQUAL
+                // src/org/kasunbg/cminus/CMinus.g:1:156: GREATER_THAN_OR_EQUAL
                 {
                 mGREATER_THAN_OR_EQUAL(); 
 
                 }
                 break;
             case 15 :
-                // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:1:178: EQUAL_EQUAL
+                // src/org/kasunbg/cminus/CMinus.g:1:178: EQUAL_EQUAL
                 {
                 mEQUAL_EQUAL(); 
 
                 }
                 break;
             case 16 :
-                // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:1:190: NOT_EQUAL
+                // src/org/kasunbg/cminus/CMinus.g:1:190: NOT_EQUAL
                 {
                 mNOT_EQUAL(); 
 
                 }
                 break;
             case 17 :
-                // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:1:200: EQUAL
+                // src/org/kasunbg/cminus/CMinus.g:1:200: EQUAL
                 {
                 mEQUAL(); 
 
                 }
                 break;
             case 18 :
-                // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:1:206: SEMICOLON
+                // src/org/kasunbg/cminus/CMinus.g:1:206: SEMICOLON
                 {
                 mSEMICOLON(); 
 
                 }
                 break;
             case 19 :
-                // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:1:216: COMMA
+                // src/org/kasunbg/cminus/CMinus.g:1:216: COMMA
                 {
                 mCOMMA(); 
 
                 }
                 break;
             case 20 :
-                // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:1:222: LEFT_PAREN
+                // src/org/kasunbg/cminus/CMinus.g:1:222: LEFT_PAREN
                 {
                 mLEFT_PAREN(); 
 
                 }
                 break;
             case 21 :
-                // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:1:233: RIGHT_PAREN
+                // src/org/kasunbg/cminus/CMinus.g:1:233: RIGHT_PAREN
                 {
                 mRIGHT_PAREN(); 
 
                 }
                 break;
             case 22 :
-                // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:1:245: LEFT_SQUARE_BRACKET
+                // src/org/kasunbg/cminus/CMinus.g:1:245: LEFT_SQUARE_BRACKET
                 {
                 mLEFT_SQUARE_BRACKET(); 
 
                 }
                 break;
             case 23 :
-                // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:1:265: RIGHT_SQUARE_BRACKET
+                // src/org/kasunbg/cminus/CMinus.g:1:265: RIGHT_SQUARE_BRACKET
                 {
                 mRIGHT_SQUARE_BRACKET(); 
 
                 }
                 break;
             case 24 :
-                // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:1:286: LEFT_BRACE
+                // src/org/kasunbg/cminus/CMinus.g:1:286: LEFT_BRACE
                 {
                 mLEFT_BRACE(); 
 
                 }
                 break;
             case 25 :
-                // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:1:297: RIGHT_BRACE
+                // src/org/kasunbg/cminus/CMinus.g:1:297: RIGHT_BRACE
                 {
                 mRIGHT_BRACE(); 
 
                 }
                 break;
             case 26 :
-                // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:1:309: COMMENT
+                // src/org/kasunbg/cminus/CMinus.g:1:309: COMMENT
                 {
                 mCOMMENT(); 
 
                 }
                 break;
             case 27 :
-                // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:1:317: ID
+                // src/org/kasunbg/cminus/CMinus.g:1:317: ID
                 {
                 mID(); 
 
                 }
                 break;
             case 28 :
-                // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:1:320: NUM
+                // src/org/kasunbg/cminus/CMinus.g:1:320: NUM
                 {
                 mNUM(); 
 
                 }
                 break;
             case 29 :
-                // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:1:324: WHITESPACE
+                // src/org/kasunbg/cminus/CMinus.g:1:324: WHITESPACE
                 {
                 mWHITESPACE(); 
 

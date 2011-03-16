@@ -1,21 +1,66 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project default="create_run_jar" name="Create Runnable Jar for Project cminus with Jar-in-Jar Loader">
-    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
-    <!--ANT 1.7 is required                                        -->
-    <target name="create_run_jar">
-	<mkdir dir="bin"/>
-        <jar destfile="bin/cminus-parser.jar">
-            <manifest>
-                <attribute name="Main-Class" value="org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader"/>
-                <attribute name="Rsrc-Main-Class" value="org.kasunbg.cminus.CMinusMain"/>
-                <attribute name="Class-Path" value="."/>
-                <attribute name="Rsrc-Class-Path" value="./ antlr-3.2.jar"/>
-            </manifest>
-            <zipfileset src="jar-in-jar-loader.zip"/>
-            <fileset dir="bin">
-		 <exclude name="cminus-parser.jar"/>
-   	    </fileset>
-            <zipfileset dir="lib" includes="antlr-3.2.jar"/>
-        </jar>
-    </target>
+<project name="cminus" basedir="." default="main">
+	<!-- properties for location of directories and files used in build -->
+	<property name="src.dir" value="src" />
+	<property name="antlr.jar" value="lib/antlr-3.2.jar" />
+	<property name="default.package" value="org/kasunbg/cminus" />
+	<property name="grammar.dir" value="${src.dir}/${default.package}" />
+	<property name="antlr.generated.dir" value="antlr-generated" />
+	<property name="build.dir" value="bin" />
+	<property name="classes.dir" value="${build.dir}/classes" />
+	<property name="jar.dir" value="${build.dir}" />
+	<property name="main-class" value="org.kasunbg.cminus.CMinusMain" />
+	<property name="grammar-file" value="${grammar.dir}/CMinus.g" />
+	<property name="test-file" value="samples/sample1.cm" />
+	<!-- Path settings used for classpath and execution -->
+	<path id="base.path">
+		<pathelement path="${classpath}" />
+		<pathelement location="${antlr.jar}" />
+		<pathelement path="${antlr.generated.dir}/${default.package}" />
+		<fileset dir="/usr/share/java">
+		</fileset>
+		<pathelement location="classes" />
+	</path>
+	<!-- build targets for cleaning before build, antlr code generation, javac 
+compilation, jar creation and running of the tests -->
+	<target name="clean">
+		<delete dir="${build.dir}" />
+	</target>
+	<target name="antlr">
+		<java jar="${antlr.jar}" fork="true">
+			<arg value="-fo" />
+			<arg value="${antlr.generated.dir}/${default.package}" />
+			<arg value="${grammar-file}" />
+			<arg value="-make" />
+		</java>
+	</target>
+	<target name="compile" depends="antlr">
+		<mkdir dir="${classes.dir}" />
+		<javac srcdir="${antlr.generated.dir}" destdir="${classes.dir}">
+			<classpath refid="base.path" />
+		</javac>
+		<javac srcdir="${src.dir}" destdir="${classes.dir}">
+			<classpath refid="base.path" />
+		</javac>
+		<copydir dest="${build.dir}/lib" src="lib">
+		</copydir>
+	</target>
+	<target name="jar" depends="compile">
+		<mkdir dir="${jar.dir}" />
+		<jar destfile="${jar.dir}/${ant.project.name}.jar" basedir="${classes.dir}">
+			<manifest>
+				<attribute name="Main-Class" value="${main-class}" />
+				<attribute name="Class-Path" value="${antlr.jar}" />
+			</manifest>
+			<fileset dir="${src.dir}" />
+		</jar>
+	</target>
+	<target name="run" depends="jar">
+		<java jar="${jar.dir}/${ant.project.name}.jar" fork="true" input="${test-file}">
+			<classpath>
+				<pathelement location="${antlr.jar}" />
+			</classpath>
+		</java>
+	</target>
+	<target name="clean-build" depends="clean,jar" />
+	<target name="main" depends="clean,run" />
 </project>

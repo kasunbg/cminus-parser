@@ -15,7 +15,7 @@
  * under the License.
 */
 
-grammar CMinus;
+grammar CMinus; 
  
 options {
   language = Java;
@@ -24,7 +24,7 @@ options {
 @header {
   package org.kasunbg.cminus; 
 }
-    
+
 @lexer::header {  
   package org.kasunbg.cminus;  
 }
