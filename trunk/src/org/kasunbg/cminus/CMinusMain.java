@@ -22,6 +22,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -31,6 +33,8 @@ import org.antlr.runtime.CommonTokenStream;
 import org.antlr.runtime.RecognitionException;
 import org.antlr.runtime.Token;
 import org.antlr.runtime.TokenStream;
+
+import com.sun.org.apache.bcel.internal.util.Class2HTML;
 
 public class CMinusMain {
 
@@ -44,8 +48,9 @@ public class CMinusMain {
 			System.out
 					.println("No parameter specified. Using a samples/sample*.cm file to tokenize and parse.\n");
 			System.out
-					.println("usage: java org.antlr.Tool [args] file.g [file2.g file3.g ...]");
-
+					.println("usage: java -jar cminus.jar [args] sample-file.cm");
+			System.out
+			.println("make sure antlr-3.2.jar is in your classpath.");
 			file = new File("samples/sample2.cm");
 		}
 
@@ -79,8 +84,8 @@ public class CMinusMain {
 
 			Token token;
 			String format = "|\t%1$-10s|\t%2$-20s|\t%3$-24s|\n"; // used for
-																	// printing
-																	// purposes
+			// printing
+			// purposes
 
 			// Prints a table with columns:
 			// Line Number | Token Text | Token Type | Token Index
@@ -123,7 +128,7 @@ public class CMinusMain {
 
 			System.out.println("\nStarted Parsing...");
 			parser.program(); // calls the Start symbol 'program' to parse the
-								// content.
+			// content.
 			System.out.println("\nParsed...");
 			// System.out.println("Parsed the content successfully.");
 
@@ -153,17 +158,27 @@ public class CMinusMain {
 				File file;
 
 				if ((file = new File(filename)).exists()) {
+					bf = new BufferedReader(new FileReader(file));
 				} else if ((file = new File("org/kasunbg/cminus/CMinus.tokens"))
 						.exists()) {
-				} else if ((file = new File("/org/kasunbg/cminus/CMinus.tokens"))
-						.exists()) {
-					System.err.println("token file can not be found");
-					System.exit(-1);
+					bf = new BufferedReader(new FileReader(file));
+				} else {
+					InputStream is = this.getClass().getResourceAsStream(
+							"/org/kasunbg/cminus/CMinus.tokens");
+					System.out.println(is + " "+ is == null);
+					
+					
+					if (is != null) {
+						bf = new BufferedReader(new InputStreamReader(is));
+					} else {
+						System.err.println("Tokens file can not be found...");
+						throw new FileNotFoundException();
+					}
 				}
 
-				bf = new BufferedReader(new FileReader(file));
 			} catch (FileNotFoundException ex) {
-				throw new FileNotFoundException();
+				System.err.println("Tokens file can not be found.");
+				throw new FileNotFoundException(); 
 			}
 
 			String temp;
