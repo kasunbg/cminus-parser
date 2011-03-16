@@ -165,8 +165,6 @@ public class CMinusMain {
 				} else {
 					InputStream is = this.getClass().getResourceAsStream(
 							"/org/kasunbg/cminus/CMinus.tokens");
-					System.out.println(is + " "+ is == null);
-					
 					
 					if (is != null) {
 						bf = new BufferedReader(new InputStreamReader(is));
