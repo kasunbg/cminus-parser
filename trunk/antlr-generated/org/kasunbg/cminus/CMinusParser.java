@@ -1,4 +1,4 @@
-// $ANTLR 3.2 Sep 23, 2009 12:02:23 /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g 2011-02-25 00:14:10
+// $ANTLR 3.2 Sep 23, 2009 12:02:23 /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g 2011-03-16 21:36:24
 
   package org.kasunbg.cminus; 
 
@@ -10,6 +10,8 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.HashMap;
 /**
+ * Copyright 2011 Kasun Gajasinghe
+ * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -75,18 +77,18 @@ public class CMinusParser extends Parser {
         
 
     public String[] getTokenNames() { return CMinusParser.tokenNames; }
-    public String getGrammarFileName() { return "/media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g"; }
+    public String getGrammarFileName() { return "/home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g"; }
 
 
 
     // $ANTLR start "program"
-    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:34:1: program : declarationList ;
+    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:36:1: program : declarationList ;
     public final void program() throws RecognitionException {
         try {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:35:2: ( declarationList )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:35:5: declarationList
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:37:2: ( declarationList )
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:37:5: declarationList
             {
-            pushFollow(FOLLOW_declarationList_in_program57);
+            pushFollow(FOLLOW_declarationList_in_program71);
             declarationList();
 
             state._fsp--;
@@ -107,13 +109,13 @@ public class CMinusParser extends Parser {
 
 
     // $ANTLR start "declarationList"
-    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:38:1: declarationList : ( declaration )+ ;
+    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:40:1: declarationList : ( declaration )+ ;
     public final void declarationList() throws RecognitionException {
         try {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:39:2: ( ( declaration )+ )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:39:4: ( declaration )+
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:41:2: ( ( declaration )+ )
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:41:4: ( declaration )+
             {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:39:4: ( declaration )+
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:41:4: ( declaration )+
             int cnt1=0;
             loop1:
             do {
@@ -127,9 +129,9 @@ public class CMinusParser extends Parser {
 
                 switch (alt1) {
             	case 1 :
-            	    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:39:4: declaration
+            	    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:41:4: declaration
             	    {
-            	    pushFollow(FOLLOW_declaration_in_declarationList76);
+            	    pushFollow(FOLLOW_declaration_in_declarationList90);
             	    declaration();
 
             	    state._fsp--;
@@ -164,10 +166,10 @@ public class CMinusParser extends Parser {
 
 
     // $ANTLR start "declaration"
-    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:42:1: declaration : ( varDeclaration | funDeclaration );
+    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:44:1: declaration : ( varDeclaration | funDeclaration );
     public final void declaration() throws RecognitionException {
         try {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:43:2: ( varDeclaration | funDeclaration )
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:45:2: ( varDeclaration | funDeclaration )
             int alt2=2;
             int LA2_0 = input.LA(1);
 
@@ -211,9 +213,9 @@ public class CMinusParser extends Parser {
             }
             switch (alt2) {
                 case 1 :
-                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:43:4: varDeclaration
+                    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:45:4: varDeclaration
                     {
-                    pushFollow(FOLLOW_varDeclaration_in_declaration90);
+                    pushFollow(FOLLOW_varDeclaration_in_declaration105);
                     varDeclaration();
 
                     state._fsp--;
@@ -222,9 +224,9 @@ public class CMinusParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:43:21: funDeclaration
+                    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:45:21: funDeclaration
                     {
-                    pushFollow(FOLLOW_funDeclaration_in_declaration94);
+                    pushFollow(FOLLOW_funDeclaration_in_declaration109);
                     funDeclaration();
 
                     state._fsp--;
@@ -247,10 +249,10 @@ public class CMinusParser extends Parser {
 
 
     // $ANTLR start "varDeclaration"
-    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:46:1: varDeclaration : ( varTypeSpecifier ID SEMICOLON | varTypeSpecifier ID LEFT_SQUARE_BRACKET NUM RIGHT_SQUARE_BRACKET SEMICOLON );
+    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:48:1: varDeclaration : ( varTypeSpecifier ID SEMICOLON | varTypeSpecifier ID LEFT_SQUARE_BRACKET NUM RIGHT_SQUARE_BRACKET SEMICOLON );
     public final void varDeclaration() throws RecognitionException {
         try {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:47:2: ( varTypeSpecifier ID SEMICOLON | varTypeSpecifier ID LEFT_SQUARE_BRACKET NUM RIGHT_SQUARE_BRACKET SEMICOLON )
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:49:2: ( varTypeSpecifier ID SEMICOLON | varTypeSpecifier ID LEFT_SQUARE_BRACKET NUM RIGHT_SQUARE_BRACKET SEMICOLON )
             int alt3=2;
             int LA3_0 = input.LA(1);
 
@@ -291,31 +293,31 @@ public class CMinusParser extends Parser {
             }
             switch (alt3) {
                 case 1 :
-                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:47:4: varTypeSpecifier ID SEMICOLON
+                    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:49:4: varTypeSpecifier ID SEMICOLON
                     {
-                    pushFollow(FOLLOW_varTypeSpecifier_in_varDeclaration110);
+                    pushFollow(FOLLOW_varTypeSpecifier_in_varDeclaration125);
                     varTypeSpecifier();
 
                     state._fsp--;
                     if (state.failed) return ;
-                    match(input,ID,FOLLOW_ID_in_varDeclaration112); if (state.failed) return ;
-                    match(input,SEMICOLON,FOLLOW_SEMICOLON_in_varDeclaration114); if (state.failed) return ;
+                    match(input,ID,FOLLOW_ID_in_varDeclaration127); if (state.failed) return ;
+                    match(input,SEMICOLON,FOLLOW_SEMICOLON_in_varDeclaration129); if (state.failed) return ;
 
                     }
                     break;
                 case 2 :
-                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:48:4: varTypeSpecifier ID LEFT_SQUARE_BRACKET NUM RIGHT_SQUARE_BRACKET SEMICOLON
+                    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:50:4: varTypeSpecifier ID LEFT_SQUARE_BRACKET NUM RIGHT_SQUARE_BRACKET SEMICOLON
                     {
-                    pushFollow(FOLLOW_varTypeSpecifier_in_varDeclaration121);
+                    pushFollow(FOLLOW_varTypeSpecifier_in_varDeclaration136);
                     varTypeSpecifier();
 
                     state._fsp--;
                     if (state.failed) return ;
-                    match(input,ID,FOLLOW_ID_in_varDeclaration123); if (state.failed) return ;
-                    match(input,LEFT_SQUARE_BRACKET,FOLLOW_LEFT_SQUARE_BRACKET_in_varDeclaration125); if (state.failed) return ;
-                    match(input,NUM,FOLLOW_NUM_in_varDeclaration127); if (state.failed) return ;
-                    match(input,RIGHT_SQUARE_BRACKET,FOLLOW_RIGHT_SQUARE_BRACKET_in_varDeclaration129); if (state.failed) return ;
-                    match(input,SEMICOLON,FOLLOW_SEMICOLON_in_varDeclaration131); if (state.failed) return ;
+                    match(input,ID,FOLLOW_ID_in_varDeclaration138); if (state.failed) return ;
+                    match(input,LEFT_SQUARE_BRACKET,FOLLOW_LEFT_SQUARE_BRACKET_in_varDeclaration140); if (state.failed) return ;
+                    match(input,NUM,FOLLOW_NUM_in_varDeclaration142); if (state.failed) return ;
+                    match(input,RIGHT_SQUARE_BRACKET,FOLLOW_RIGHT_SQUARE_BRACKET_in_varDeclaration144); if (state.failed) return ;
+                    match(input,SEMICOLON,FOLLOW_SEMICOLON_in_varDeclaration146); if (state.failed) return ;
 
                     }
                     break;
@@ -334,13 +336,13 @@ public class CMinusParser extends Parser {
 
 
     // $ANTLR start "varTypeSpecifier"
-    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:51:1: varTypeSpecifier : KEYWORD_INT ;
+    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:53:1: varTypeSpecifier : KEYWORD_INT ;
     public final void varTypeSpecifier() throws RecognitionException {
         try {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:52:2: ( KEYWORD_INT )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:52:4: KEYWORD_INT
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:54:2: ( KEYWORD_INT )
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:54:4: KEYWORD_INT
             {
-            match(input,KEYWORD_INT,FOLLOW_KEYWORD_INT_in_varTypeSpecifier143); if (state.failed) return ;
+            match(input,KEYWORD_INT,FOLLOW_KEYWORD_INT_in_varTypeSpecifier158); if (state.failed) return ;
 
             }
 
@@ -357,11 +359,11 @@ public class CMinusParser extends Parser {
 
 
     // $ANTLR start "funTypeSpecifier"
-    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:55:1: funTypeSpecifier : ( KEYWORD_INT | KEYWORD_VOID );
+    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:57:1: funTypeSpecifier : ( KEYWORD_INT | KEYWORD_VOID );
     public final void funTypeSpecifier() throws RecognitionException {
         try {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:56:2: ( KEYWORD_INT | KEYWORD_VOID )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:58:2: ( KEYWORD_INT | KEYWORD_VOID )
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:
             {
             if ( (input.LA(1)>=KEYWORD_INT && input.LA(1)<=KEYWORD_VOID) ) {
                 input.consume();
@@ -389,26 +391,26 @@ public class CMinusParser extends Parser {
 
 
     // $ANTLR start "funDeclaration"
-    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:59:1: funDeclaration : funTypeSpecifier ID LEFT_PAREN params RIGHT_PAREN compoundStmt ;
+    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:61:1: funDeclaration : funTypeSpecifier ID LEFT_PAREN params RIGHT_PAREN compoundStmt ;
     public final void funDeclaration() throws RecognitionException {
         try {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:60:2: ( funTypeSpecifier ID LEFT_PAREN params RIGHT_PAREN compoundStmt )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:60:4: funTypeSpecifier ID LEFT_PAREN params RIGHT_PAREN compoundStmt
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:62:2: ( funTypeSpecifier ID LEFT_PAREN params RIGHT_PAREN compoundStmt )
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:62:4: funTypeSpecifier ID LEFT_PAREN params RIGHT_PAREN compoundStmt
             {
-            pushFollow(FOLLOW_funTypeSpecifier_in_funDeclaration175);
+            pushFollow(FOLLOW_funTypeSpecifier_in_funDeclaration190);
             funTypeSpecifier();
 
             state._fsp--;
             if (state.failed) return ;
-            match(input,ID,FOLLOW_ID_in_funDeclaration177); if (state.failed) return ;
-            match(input,LEFT_PAREN,FOLLOW_LEFT_PAREN_in_funDeclaration179); if (state.failed) return ;
-            pushFollow(FOLLOW_params_in_funDeclaration181);
+            match(input,ID,FOLLOW_ID_in_funDeclaration192); if (state.failed) return ;
+            match(input,LEFT_PAREN,FOLLOW_LEFT_PAREN_in_funDeclaration194); if (state.failed) return ;
+            pushFollow(FOLLOW_params_in_funDeclaration196);
             params();
 
             state._fsp--;
             if (state.failed) return ;
-            match(input,RIGHT_PAREN,FOLLOW_RIGHT_PAREN_in_funDeclaration183); if (state.failed) return ;
-            pushFollow(FOLLOW_compoundStmt_in_funDeclaration185);
+            match(input,RIGHT_PAREN,FOLLOW_RIGHT_PAREN_in_funDeclaration198); if (state.failed) return ;
+            pushFollow(FOLLOW_compoundStmt_in_funDeclaration200);
             compoundStmt();
 
             state._fsp--;
@@ -429,10 +431,10 @@ public class CMinusParser extends Parser {
 
 
     // $ANTLR start "params"
-    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:63:1: params : ( paramList | KEYWORD_VOID );
+    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:65:1: params : ( paramList | KEYWORD_VOID );
     public final void params() throws RecognitionException {
         try {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:64:2: ( paramList | KEYWORD_VOID )
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:66:2: ( paramList | KEYWORD_VOID )
             int alt4=2;
             int LA4_0 = input.LA(1);
 
@@ -451,9 +453,9 @@ public class CMinusParser extends Parser {
             }
             switch (alt4) {
                 case 1 :
-                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:64:4: paramList
+                    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:66:4: paramList
                     {
-                    pushFollow(FOLLOW_paramList_in_params200);
+                    pushFollow(FOLLOW_paramList_in_params215);
                     paramList();
 
                     state._fsp--;
@@ -462,9 +464,9 @@ public class CMinusParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:64:16: KEYWORD_VOID
+                    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:66:16: KEYWORD_VOID
                     {
-                    match(input,KEYWORD_VOID,FOLLOW_KEYWORD_VOID_in_params204); if (state.failed) return ;
+                    match(input,KEYWORD_VOID,FOLLOW_KEYWORD_VOID_in_params219); if (state.failed) return ;
 
                     }
                     break;
@@ -483,18 +485,18 @@ public class CMinusParser extends Parser {
 
 
     // $ANTLR start "paramList"
-    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:67:1: paramList : param ( COMMA param )* ;
+    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:69:1: paramList : param ( COMMA param )* ;
     public final void paramList() throws RecognitionException {
         try {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:68:2: ( param ( COMMA param )* )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:68:4: param ( COMMA param )*
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:70:2: ( param ( COMMA param )* )
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:70:4: param ( COMMA param )*
             {
-            pushFollow(FOLLOW_param_in_paramList217);
+            pushFollow(FOLLOW_param_in_paramList232);
             param();
 
             state._fsp--;
             if (state.failed) return ;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:68:10: ( COMMA param )*
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:70:10: ( COMMA param )*
             loop5:
             do {
                 int alt5=2;
@@ -507,10 +509,10 @@ public class CMinusParser extends Parser {
 
                 switch (alt5) {
             	case 1 :
-            	    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:68:12: COMMA param
+            	    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:70:12: COMMA param
             	    {
-            	    match(input,COMMA,FOLLOW_COMMA_in_paramList221); if (state.failed) return ;
-            	    pushFollow(FOLLOW_param_in_paramList223);
+            	    match(input,COMMA,FOLLOW_COMMA_in_paramList236); if (state.failed) return ;
+            	    pushFollow(FOLLOW_param_in_paramList238);
             	    param();
 
             	    state._fsp--;
@@ -540,19 +542,19 @@ public class CMinusParser extends Parser {
 
 
     // $ANTLR start "param"
-    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:71:1: param : varTypeSpecifier ID ( LEFT_SQUARE_BRACKET RIGHT_SQUARE_BRACKET )? ;
+    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:73:1: param : varTypeSpecifier ID ( LEFT_SQUARE_BRACKET RIGHT_SQUARE_BRACKET )? ;
     public final void param() throws RecognitionException {
         try {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:72:2: ( varTypeSpecifier ID ( LEFT_SQUARE_BRACKET RIGHT_SQUARE_BRACKET )? )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:72:4: varTypeSpecifier ID ( LEFT_SQUARE_BRACKET RIGHT_SQUARE_BRACKET )?
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:74:2: ( varTypeSpecifier ID ( LEFT_SQUARE_BRACKET RIGHT_SQUARE_BRACKET )? )
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:74:4: varTypeSpecifier ID ( LEFT_SQUARE_BRACKET RIGHT_SQUARE_BRACKET )?
             {
-            pushFollow(FOLLOW_varTypeSpecifier_in_param239);
+            pushFollow(FOLLOW_varTypeSpecifier_in_param254);
             varTypeSpecifier();
 
             state._fsp--;
             if (state.failed) return ;
-            match(input,ID,FOLLOW_ID_in_param241); if (state.failed) return ;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:72:24: ( LEFT_SQUARE_BRACKET RIGHT_SQUARE_BRACKET )?
+            match(input,ID,FOLLOW_ID_in_param256); if (state.failed) return ;
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:74:24: ( LEFT_SQUARE_BRACKET RIGHT_SQUARE_BRACKET )?
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -561,10 +563,10 @@ public class CMinusParser extends Parser {
             }
             switch (alt6) {
                 case 1 :
-                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:72:26: LEFT_SQUARE_BRACKET RIGHT_SQUARE_BRACKET
+                    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:74:26: LEFT_SQUARE_BRACKET RIGHT_SQUARE_BRACKET
                     {
-                    match(input,LEFT_SQUARE_BRACKET,FOLLOW_LEFT_SQUARE_BRACKET_in_param245); if (state.failed) return ;
-                    match(input,RIGHT_SQUARE_BRACKET,FOLLOW_RIGHT_SQUARE_BRACKET_in_param247); if (state.failed) return ;
+                    match(input,LEFT_SQUARE_BRACKET,FOLLOW_LEFT_SQUARE_BRACKET_in_param260); if (state.failed) return ;
+                    match(input,RIGHT_SQUARE_BRACKET,FOLLOW_RIGHT_SQUARE_BRACKET_in_param262); if (state.failed) return ;
 
                     }
                     break;
@@ -587,24 +589,24 @@ public class CMinusParser extends Parser {
 
 
     // $ANTLR start "compoundStmt"
-    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:75:1: compoundStmt : LEFT_BRACE localDeclarations statementList RIGHT_BRACE ;
+    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:77:1: compoundStmt : LEFT_BRACE localDeclarations statementList RIGHT_BRACE ;
     public final void compoundStmt() throws RecognitionException {
         try {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:76:2: ( LEFT_BRACE localDeclarations statementList RIGHT_BRACE )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:76:4: LEFT_BRACE localDeclarations statementList RIGHT_BRACE
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:78:2: ( LEFT_BRACE localDeclarations statementList RIGHT_BRACE )
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:78:4: LEFT_BRACE localDeclarations statementList RIGHT_BRACE
             {
-            match(input,LEFT_BRACE,FOLLOW_LEFT_BRACE_in_compoundStmt262); if (state.failed) return ;
-            pushFollow(FOLLOW_localDeclarations_in_compoundStmt264);
+            match(input,LEFT_BRACE,FOLLOW_LEFT_BRACE_in_compoundStmt277); if (state.failed) return ;
+            pushFollow(FOLLOW_localDeclarations_in_compoundStmt279);
             localDeclarations();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_statementList_in_compoundStmt266);
+            pushFollow(FOLLOW_statementList_in_compoundStmt281);
             statementList();
 
             state._fsp--;
             if (state.failed) return ;
-            match(input,RIGHT_BRACE,FOLLOW_RIGHT_BRACE_in_compoundStmt268); if (state.failed) return ;
+            match(input,RIGHT_BRACE,FOLLOW_RIGHT_BRACE_in_compoundStmt283); if (state.failed) return ;
 
             }
 
@@ -621,13 +623,13 @@ public class CMinusParser extends Parser {
 
 
     // $ANTLR start "localDeclarations"
-    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:79:1: localDeclarations : ( varDeclaration )* ;
+    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:81:1: localDeclarations : ( varDeclaration )* ;
     public final void localDeclarations() throws RecognitionException {
         try {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:80:2: ( ( varDeclaration )* )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:80:4: ( varDeclaration )*
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:82:2: ( ( varDeclaration )* )
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:82:4: ( varDeclaration )*
             {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:80:4: ( varDeclaration )*
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:82:4: ( varDeclaration )*
             loop7:
             do {
                 int alt7=2;
@@ -640,9 +642,9 @@ public class CMinusParser extends Parser {
 
                 switch (alt7) {
             	case 1 :
-            	    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:80:4: varDeclaration
+            	    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:82:4: varDeclaration
             	    {
-            	    pushFollow(FOLLOW_varDeclaration_in_localDeclarations281);
+            	    pushFollow(FOLLOW_varDeclaration_in_localDeclarations296);
             	    varDeclaration();
 
             	    state._fsp--;
@@ -672,13 +674,13 @@ public class CMinusParser extends Parser {
 
 
     // $ANTLR start "statementList"
-    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:83:1: statementList : ( statement )* ;
+    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:85:1: statementList : ( statement )* ;
     public final void statementList() throws RecognitionException {
         try {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:84:2: ( ( statement )* )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:84:4: ( statement )*
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:86:2: ( ( statement )* )
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:86:4: ( statement )*
             {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:84:4: ( statement )*
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:86:4: ( statement )*
             loop8:
             do {
                 int alt8=2;
@@ -691,9 +693,9 @@ public class CMinusParser extends Parser {
 
                 switch (alt8) {
             	case 1 :
-            	    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:84:4: statement
+            	    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:86:4: statement
             	    {
-            	    pushFollow(FOLLOW_statement_in_statementList295);
+            	    pushFollow(FOLLOW_statement_in_statementList310);
             	    statement();
 
             	    state._fsp--;
@@ -723,10 +725,10 @@ public class CMinusParser extends Parser {
 
 
     // $ANTLR start "statement"
-    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:87:1: statement : ( expressionStmt | compoundStmt | selectionStmt | iterationStmt | returnStmt );
+    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:89:1: statement : ( expressionStmt | compoundStmt | selectionStmt | iterationStmt | returnStmt );
     public final void statement() throws RecognitionException {
         try {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:88:2: ( expressionStmt | compoundStmt | selectionStmt | iterationStmt | returnStmt )
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:90:2: ( expressionStmt | compoundStmt | selectionStmt | iterationStmt | returnStmt )
             int alt9=5;
             switch ( input.LA(1) ) {
             case ID:
@@ -767,9 +769,9 @@ public class CMinusParser extends Parser {
 
             switch (alt9) {
                 case 1 :
-                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:88:4: expressionStmt
+                    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:90:4: expressionStmt
                     {
-                    pushFollow(FOLLOW_expressionStmt_in_statement309);
+                    pushFollow(FOLLOW_expressionStmt_in_statement324);
                     expressionStmt();
 
                     state._fsp--;
@@ -778,9 +780,9 @@ public class CMinusParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:89:4: compoundStmt
+                    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:91:4: compoundStmt
                     {
-                    pushFollow(FOLLOW_compoundStmt_in_statement314);
+                    pushFollow(FOLLOW_compoundStmt_in_statement329);
                     compoundStmt();
 
                     state._fsp--;
@@ -789,9 +791,9 @@ public class CMinusParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:90:4: selectionStmt
+                    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:92:4: selectionStmt
                     {
-                    pushFollow(FOLLOW_selectionStmt_in_statement319);
+                    pushFollow(FOLLOW_selectionStmt_in_statement334);
                     selectionStmt();
 
                     state._fsp--;
@@ -800,9 +802,9 @@ public class CMinusParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:91:4: iterationStmt
+                    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:93:4: iterationStmt
                     {
-                    pushFollow(FOLLOW_iterationStmt_in_statement324);
+                    pushFollow(FOLLOW_iterationStmt_in_statement339);
                     iterationStmt();
 
                     state._fsp--;
@@ -811,9 +813,9 @@ public class CMinusParser extends Parser {
                     }
                     break;
                 case 5 :
-                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:92:4: returnStmt
+                    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:94:4: returnStmt
                     {
-                    pushFollow(FOLLOW_returnStmt_in_statement329);
+                    pushFollow(FOLLOW_returnStmt_in_statement344);
                     returnStmt();
 
                     state._fsp--;
@@ -836,10 +838,10 @@ public class CMinusParser extends Parser {
 
 
     // $ANTLR start "expressionStmt"
-    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:95:1: expressionStmt : ( expression SEMICOLON | SEMICOLON );
+    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:97:1: expressionStmt : ( expression SEMICOLON | SEMICOLON );
     public final void expressionStmt() throws RecognitionException {
         try {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:96:2: ( expression SEMICOLON | SEMICOLON )
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:98:2: ( expression SEMICOLON | SEMICOLON )
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -858,21 +860,21 @@ public class CMinusParser extends Parser {
             }
             switch (alt10) {
                 case 1 :
-                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:96:4: expression SEMICOLON
+                    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:98:4: expression SEMICOLON
                     {
-                    pushFollow(FOLLOW_expression_in_expressionStmt343);
+                    pushFollow(FOLLOW_expression_in_expressionStmt358);
                     expression();
 
                     state._fsp--;
                     if (state.failed) return ;
-                    match(input,SEMICOLON,FOLLOW_SEMICOLON_in_expressionStmt345); if (state.failed) return ;
+                    match(input,SEMICOLON,FOLLOW_SEMICOLON_in_expressionStmt360); if (state.failed) return ;
 
                     }
                     break;
                 case 2 :
-                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:96:27: SEMICOLON
+                    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:98:27: SEMICOLON
                     {
-                    match(input,SEMICOLON,FOLLOW_SEMICOLON_in_expressionStmt349); if (state.failed) return ;
+                    match(input,SEMICOLON,FOLLOW_SEMICOLON_in_expressionStmt364); if (state.failed) return ;
 
                     }
                     break;
@@ -891,24 +893,24 @@ public class CMinusParser extends Parser {
 
 
     // $ANTLR start "selectionStmt"
-    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:99:1: selectionStmt : KEYWORD_IF LEFT_PAREN expression RIGHT_PAREN ( statement ) ( ( KEYWORD_ELSE )=> KEYWORD_ELSE ( statement ) )? ;
+    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:101:1: selectionStmt : KEYWORD_IF LEFT_PAREN expression RIGHT_PAREN ( statement ) ( ( KEYWORD_ELSE )=> KEYWORD_ELSE ( statement ) )? ;
     public final void selectionStmt() throws RecognitionException {
         try {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:100:2: ( KEYWORD_IF LEFT_PAREN expression RIGHT_PAREN ( statement ) ( ( KEYWORD_ELSE )=> KEYWORD_ELSE ( statement ) )? )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:100:4: KEYWORD_IF LEFT_PAREN expression RIGHT_PAREN ( statement ) ( ( KEYWORD_ELSE )=> KEYWORD_ELSE ( statement ) )?
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:102:2: ( KEYWORD_IF LEFT_PAREN expression RIGHT_PAREN ( statement ) ( ( KEYWORD_ELSE )=> KEYWORD_ELSE ( statement ) )? )
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:102:4: KEYWORD_IF LEFT_PAREN expression RIGHT_PAREN ( statement ) ( ( KEYWORD_ELSE )=> KEYWORD_ELSE ( statement ) )?
             {
-            match(input,KEYWORD_IF,FOLLOW_KEYWORD_IF_in_selectionStmt366); if (state.failed) return ;
-            match(input,LEFT_PAREN,FOLLOW_LEFT_PAREN_in_selectionStmt368); if (state.failed) return ;
-            pushFollow(FOLLOW_expression_in_selectionStmt370);
+            match(input,KEYWORD_IF,FOLLOW_KEYWORD_IF_in_selectionStmt381); if (state.failed) return ;
+            match(input,LEFT_PAREN,FOLLOW_LEFT_PAREN_in_selectionStmt383); if (state.failed) return ;
+            pushFollow(FOLLOW_expression_in_selectionStmt385);
             expression();
 
             state._fsp--;
             if (state.failed) return ;
-            match(input,RIGHT_PAREN,FOLLOW_RIGHT_PAREN_in_selectionStmt372); if (state.failed) return ;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:100:49: ( statement )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:100:50: statement
+            match(input,RIGHT_PAREN,FOLLOW_RIGHT_PAREN_in_selectionStmt387); if (state.failed) return ;
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:102:49: ( statement )
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:102:50: statement
             {
-            pushFollow(FOLLOW_statement_in_selectionStmt375);
+            pushFollow(FOLLOW_statement_in_selectionStmt390);
             statement();
 
             state._fsp--;
@@ -916,7 +918,7 @@ public class CMinusParser extends Parser {
 
             }
 
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:101:3: ( ( KEYWORD_ELSE )=> KEYWORD_ELSE ( statement ) )?
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:103:3: ( ( KEYWORD_ELSE )=> KEYWORD_ELSE ( statement ) )?
             int alt11=2;
             int LA11_0 = input.LA(1);
 
@@ -929,13 +931,13 @@ public class CMinusParser extends Parser {
             }
             switch (alt11) {
                 case 1 :
-                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:101:5: ( KEYWORD_ELSE )=> KEYWORD_ELSE ( statement )
+                    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:103:5: ( KEYWORD_ELSE )=> KEYWORD_ELSE ( statement )
                     {
-                    match(input,KEYWORD_ELSE,FOLLOW_KEYWORD_ELSE_in_selectionStmt388); if (state.failed) return ;
-                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:101:36: ( statement )
-                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:101:37: statement
+                    match(input,KEYWORD_ELSE,FOLLOW_KEYWORD_ELSE_in_selectionStmt403); if (state.failed) return ;
+                    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:103:36: ( statement )
+                    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:103:37: statement
                     {
-                    pushFollow(FOLLOW_statement_in_selectionStmt391);
+                    pushFollow(FOLLOW_statement_in_selectionStmt406);
                     statement();
 
                     state._fsp--;
@@ -965,21 +967,21 @@ public class CMinusParser extends Parser {
 
 
     // $ANTLR start "iterationStmt"
-    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:104:1: iterationStmt : KEYWORD_WHILE LEFT_PAREN expression RIGHT_PAREN statement ;
+    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:106:1: iterationStmt : KEYWORD_WHILE LEFT_PAREN expression RIGHT_PAREN statement ;
     public final void iterationStmt() throws RecognitionException {
         try {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:105:2: ( KEYWORD_WHILE LEFT_PAREN expression RIGHT_PAREN statement )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:105:4: KEYWORD_WHILE LEFT_PAREN expression RIGHT_PAREN statement
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:107:2: ( KEYWORD_WHILE LEFT_PAREN expression RIGHT_PAREN statement )
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:107:4: KEYWORD_WHILE LEFT_PAREN expression RIGHT_PAREN statement
             {
-            match(input,KEYWORD_WHILE,FOLLOW_KEYWORD_WHILE_in_iterationStmt416); if (state.failed) return ;
-            match(input,LEFT_PAREN,FOLLOW_LEFT_PAREN_in_iterationStmt418); if (state.failed) return ;
-            pushFollow(FOLLOW_expression_in_iterationStmt420);
+            match(input,KEYWORD_WHILE,FOLLOW_KEYWORD_WHILE_in_iterationStmt431); if (state.failed) return ;
+            match(input,LEFT_PAREN,FOLLOW_LEFT_PAREN_in_iterationStmt433); if (state.failed) return ;
+            pushFollow(FOLLOW_expression_in_iterationStmt435);
             expression();
 
             state._fsp--;
             if (state.failed) return ;
-            match(input,RIGHT_PAREN,FOLLOW_RIGHT_PAREN_in_iterationStmt422); if (state.failed) return ;
-            pushFollow(FOLLOW_statement_in_iterationStmt424);
+            match(input,RIGHT_PAREN,FOLLOW_RIGHT_PAREN_in_iterationStmt437); if (state.failed) return ;
+            pushFollow(FOLLOW_statement_in_iterationStmt439);
             statement();
 
             state._fsp--;
@@ -1000,14 +1002,14 @@ public class CMinusParser extends Parser {
 
 
     // $ANTLR start "returnStmt"
-    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:108:1: returnStmt : KEYWORD_RETURN ( () | expression ) SEMICOLON ;
+    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:110:1: returnStmt : KEYWORD_RETURN ( () | expression ) SEMICOLON ;
     public final void returnStmt() throws RecognitionException {
         try {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:109:2: ( KEYWORD_RETURN ( () | expression ) SEMICOLON )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:109:4: KEYWORD_RETURN ( () | expression ) SEMICOLON
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:111:2: ( KEYWORD_RETURN ( () | expression ) SEMICOLON )
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:111:4: KEYWORD_RETURN ( () | expression ) SEMICOLON
             {
-            match(input,KEYWORD_RETURN,FOLLOW_KEYWORD_RETURN_in_returnStmt439); if (state.failed) return ;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:109:19: ( () | expression )
+            match(input,KEYWORD_RETURN,FOLLOW_KEYWORD_RETURN_in_returnStmt454); if (state.failed) return ;
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:111:19: ( () | expression )
             int alt12=2;
             int LA12_0 = input.LA(1);
 
@@ -1026,10 +1028,10 @@ public class CMinusParser extends Parser {
             }
             switch (alt12) {
                 case 1 :
-                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:109:21: ()
+                    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:111:21: ()
                     {
-                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:109:21: ()
-                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:109:23: 
+                    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:111:21: ()
+                    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:111:23: 
                     {
                     }
 
@@ -1037,9 +1039,9 @@ public class CMinusParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:109:27: expression
+                    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:111:27: expression
                     {
-                    pushFollow(FOLLOW_expression_in_returnStmt449);
+                    pushFollow(FOLLOW_expression_in_returnStmt464);
                     expression();
 
                     state._fsp--;
@@ -1050,7 +1052,7 @@ public class CMinusParser extends Parser {
 
             }
 
-            match(input,SEMICOLON,FOLLOW_SEMICOLON_in_returnStmt454); if (state.failed) return ;
+            match(input,SEMICOLON,FOLLOW_SEMICOLON_in_returnStmt469); if (state.failed) return ;
 
             }
 
@@ -1067,10 +1069,10 @@ public class CMinusParser extends Parser {
 
 
     // $ANTLR start "expression"
-    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:112:1: expression : ( ( var EQUAL )=> var EQUAL expression | simpleExpression );
+    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:114:1: expression : ( ( var EQUAL )=> var EQUAL expression | simpleExpression );
     public final void expression() throws RecognitionException {
         try {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:113:2: ( ( var EQUAL )=> var EQUAL expression | simpleExpression )
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:115:2: ( ( var EQUAL )=> var EQUAL expression | simpleExpression )
             int alt13=2;
             int LA13_0 = input.LA(1);
 
@@ -1103,15 +1105,15 @@ public class CMinusParser extends Parser {
             }
             switch (alt13) {
                 case 1 :
-                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:113:4: ( var EQUAL )=> var EQUAL expression
+                    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:115:4: ( var EQUAL )=> var EQUAL expression
                     {
-                    pushFollow(FOLLOW_var_in_expression478);
+                    pushFollow(FOLLOW_var_in_expression493);
                     var();
 
                     state._fsp--;
                     if (state.failed) return ;
-                    match(input,EQUAL,FOLLOW_EQUAL_in_expression480); if (state.failed) return ;
-                    pushFollow(FOLLOW_expression_in_expression482);
+                    match(input,EQUAL,FOLLOW_EQUAL_in_expression495); if (state.failed) return ;
+                    pushFollow(FOLLOW_expression_in_expression497);
                     expression();
 
                     state._fsp--;
@@ -1120,9 +1122,9 @@ public class CMinusParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:114:4: simpleExpression
+                    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:116:4: simpleExpression
                     {
-                    pushFollow(FOLLOW_simpleExpression_in_expression488);
+                    pushFollow(FOLLOW_simpleExpression_in_expression503);
                     simpleExpression();
 
                     state._fsp--;
@@ -1145,14 +1147,14 @@ public class CMinusParser extends Parser {
 
 
     // $ANTLR start "var"
-    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:117:1: var : ID ( LEFT_SQUARE_BRACKET expression RIGHT_SQUARE_BRACKET )? ;
+    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:119:1: var : ID ( LEFT_SQUARE_BRACKET expression RIGHT_SQUARE_BRACKET )? ;
     public final void var() throws RecognitionException {
         try {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:117:5: ( ID ( LEFT_SQUARE_BRACKET expression RIGHT_SQUARE_BRACKET )? )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:117:8: ID ( LEFT_SQUARE_BRACKET expression RIGHT_SQUARE_BRACKET )?
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:119:5: ( ID ( LEFT_SQUARE_BRACKET expression RIGHT_SQUARE_BRACKET )? )
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:119:8: ID ( LEFT_SQUARE_BRACKET expression RIGHT_SQUARE_BRACKET )?
             {
-            match(input,ID,FOLLOW_ID_in_var510); if (state.failed) return ;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:117:11: ( LEFT_SQUARE_BRACKET expression RIGHT_SQUARE_BRACKET )?
+            match(input,ID,FOLLOW_ID_in_var525); if (state.failed) return ;
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:119:11: ( LEFT_SQUARE_BRACKET expression RIGHT_SQUARE_BRACKET )?
             int alt14=2;
             int LA14_0 = input.LA(1);
 
@@ -1161,15 +1163,15 @@ public class CMinusParser extends Parser {
             }
             switch (alt14) {
                 case 1 :
-                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:117:13: LEFT_SQUARE_BRACKET expression RIGHT_SQUARE_BRACKET
+                    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:119:13: LEFT_SQUARE_BRACKET expression RIGHT_SQUARE_BRACKET
                     {
-                    match(input,LEFT_SQUARE_BRACKET,FOLLOW_LEFT_SQUARE_BRACKET_in_var514); if (state.failed) return ;
-                    pushFollow(FOLLOW_expression_in_var516);
+                    match(input,LEFT_SQUARE_BRACKET,FOLLOW_LEFT_SQUARE_BRACKET_in_var529); if (state.failed) return ;
+                    pushFollow(FOLLOW_expression_in_var531);
                     expression();
 
                     state._fsp--;
                     if (state.failed) return ;
-                    match(input,RIGHT_SQUARE_BRACKET,FOLLOW_RIGHT_SQUARE_BRACKET_in_var518); if (state.failed) return ;
+                    match(input,RIGHT_SQUARE_BRACKET,FOLLOW_RIGHT_SQUARE_BRACKET_in_var533); if (state.failed) return ;
 
                     }
                     break;
@@ -1192,18 +1194,18 @@ public class CMinusParser extends Parser {
 
 
     // $ANTLR start "simpleExpression"
-    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:120:1: simpleExpression : additiveExpression ( relop additiveExpression )? ;
+    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:122:1: simpleExpression : additiveExpression ( relop additiveExpression )? ;
     public final void simpleExpression() throws RecognitionException {
         try {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:121:2: ( additiveExpression ( relop additiveExpression )? )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:121:4: additiveExpression ( relop additiveExpression )?
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:123:2: ( additiveExpression ( relop additiveExpression )? )
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:123:4: additiveExpression ( relop additiveExpression )?
             {
-            pushFollow(FOLLOW_additiveExpression_in_simpleExpression537);
+            pushFollow(FOLLOW_additiveExpression_in_simpleExpression552);
             additiveExpression();
 
             state._fsp--;
             if (state.failed) return ;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:121:23: ( relop additiveExpression )?
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:123:23: ( relop additiveExpression )?
             int alt15=2;
             int LA15_0 = input.LA(1);
 
@@ -1212,14 +1214,14 @@ public class CMinusParser extends Parser {
             }
             switch (alt15) {
                 case 1 :
-                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:121:24: relop additiveExpression
+                    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:123:24: relop additiveExpression
                     {
-                    pushFollow(FOLLOW_relop_in_simpleExpression540);
+                    pushFollow(FOLLOW_relop_in_simpleExpression555);
                     relop();
 
                     state._fsp--;
                     if (state.failed) return ;
-                    pushFollow(FOLLOW_additiveExpression_in_simpleExpression542);
+                    pushFollow(FOLLOW_additiveExpression_in_simpleExpression557);
                     additiveExpression();
 
                     state._fsp--;
@@ -1246,11 +1248,11 @@ public class CMinusParser extends Parser {
 
 
     // $ANTLR start "relop"
-    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:124:1: relop : ( '<=' | '<' | '>=' | '>' | '==' | '!=' );
+    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:126:1: relop : ( '<=' | '<' | '>=' | '>' | '==' | '!=' );
     public final void relop() throws RecognitionException {
         try {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:125:2: ( '<=' | '<' | '>=' | '>' | '==' | '!=' )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:127:2: ( '<=' | '<' | '>=' | '>' | '==' | '!=' )
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:
             {
             if ( (input.LA(1)>=LESS_THAN && input.LA(1)<=NOT_EQUAL) ) {
                 input.consume();
@@ -1278,18 +1280,18 @@ public class CMinusParser extends Parser {
 
 
     // $ANTLR start "additiveExpression"
-    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:128:1: additiveExpression : term ( addop term )* ;
+    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:130:1: additiveExpression : term ( addop term )* ;
     public final void additiveExpression() throws RecognitionException {
         try {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:129:2: ( term ( addop term )* )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:129:4: term ( addop term )*
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:131:2: ( term ( addop term )* )
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:131:4: term ( addop term )*
             {
-            pushFollow(FOLLOW_term_in_additiveExpression595);
+            pushFollow(FOLLOW_term_in_additiveExpression610);
             term();
 
             state._fsp--;
             if (state.failed) return ;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:129:9: ( addop term )*
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:131:9: ( addop term )*
             loop16:
             do {
                 int alt16=2;
@@ -1302,14 +1304,14 @@ public class CMinusParser extends Parser {
 
                 switch (alt16) {
             	case 1 :
-            	    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:129:10: addop term
+            	    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:131:10: addop term
             	    {
-            	    pushFollow(FOLLOW_addop_in_additiveExpression598);
+            	    pushFollow(FOLLOW_addop_in_additiveExpression613);
             	    addop();
 
             	    state._fsp--;
             	    if (state.failed) return ;
-            	    pushFollow(FOLLOW_term_in_additiveExpression600);
+            	    pushFollow(FOLLOW_term_in_additiveExpression615);
             	    term();
 
             	    state._fsp--;
@@ -1339,11 +1341,11 @@ public class CMinusParser extends Parser {
 
 
     // $ANTLR start "addop"
-    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:132:1: addop : ( PLUS | MINUS );
+    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:134:1: addop : ( PLUS | MINUS );
     public final void addop() throws RecognitionException {
         try {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:133:2: ( PLUS | MINUS )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:135:2: ( PLUS | MINUS )
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:
             {
             if ( (input.LA(1)>=PLUS && input.LA(1)<=MINUS) ) {
                 input.consume();
@@ -1371,18 +1373,18 @@ public class CMinusParser extends Parser {
 
 
     // $ANTLR start "term"
-    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:136:1: term : factor ( mulop factor )* ;
+    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:138:1: term : factor ( mulop factor )* ;
     public final void term() throws RecognitionException {
         try {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:137:2: ( factor ( mulop factor )* )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:137:4: factor ( mulop factor )*
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:139:2: ( factor ( mulop factor )* )
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:139:4: factor ( mulop factor )*
             {
-            pushFollow(FOLLOW_factor_in_term632);
+            pushFollow(FOLLOW_factor_in_term647);
             factor();
 
             state._fsp--;
             if (state.failed) return ;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:137:11: ( mulop factor )*
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:139:11: ( mulop factor )*
             loop17:
             do {
                 int alt17=2;
@@ -1395,14 +1397,14 @@ public class CMinusParser extends Parser {
 
                 switch (alt17) {
             	case 1 :
-            	    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:137:12: mulop factor
+            	    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:139:12: mulop factor
             	    {
-            	    pushFollow(FOLLOW_mulop_in_term635);
+            	    pushFollow(FOLLOW_mulop_in_term650);
             	    mulop();
 
             	    state._fsp--;
             	    if (state.failed) return ;
-            	    pushFollow(FOLLOW_factor_in_term637);
+            	    pushFollow(FOLLOW_factor_in_term652);
             	    factor();
 
             	    state._fsp--;
@@ -1432,11 +1434,11 @@ public class CMinusParser extends Parser {
 
 
     // $ANTLR start "mulop"
-    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:140:1: mulop : ( MULTI | DIVISION );
+    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:142:1: mulop : ( MULTI | DIVISION );
     public final void mulop() throws RecognitionException {
         try {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:141:2: ( MULTI | DIVISION )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:143:2: ( MULTI | DIVISION )
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:
             {
             if ( (input.LA(1)>=MULTI && input.LA(1)<=DIVISION) ) {
                 input.consume();
@@ -1464,10 +1466,10 @@ public class CMinusParser extends Parser {
 
 
     // $ANTLR start "factor"
-    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:144:1: factor : ( LEFT_PAREN expression RIGHT_PAREN | var | call | NUM );
+    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:146:1: factor : ( LEFT_PAREN expression RIGHT_PAREN | var | call | NUM );
     public final void factor() throws RecognitionException {
         try {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:145:2: ( LEFT_PAREN expression RIGHT_PAREN | var | call | NUM )
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:147:2: ( LEFT_PAREN expression RIGHT_PAREN | var | call | NUM )
             int alt18=4;
             switch ( input.LA(1) ) {
             case LEFT_PAREN:
@@ -1509,22 +1511,22 @@ public class CMinusParser extends Parser {
 
             switch (alt18) {
                 case 1 :
-                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:145:4: LEFT_PAREN expression RIGHT_PAREN
+                    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:147:4: LEFT_PAREN expression RIGHT_PAREN
                     {
-                    match(input,LEFT_PAREN,FOLLOW_LEFT_PAREN_in_factor677); if (state.failed) return ;
-                    pushFollow(FOLLOW_expression_in_factor679);
+                    match(input,LEFT_PAREN,FOLLOW_LEFT_PAREN_in_factor692); if (state.failed) return ;
+                    pushFollow(FOLLOW_expression_in_factor694);
                     expression();
 
                     state._fsp--;
                     if (state.failed) return ;
-                    match(input,RIGHT_PAREN,FOLLOW_RIGHT_PAREN_in_factor681); if (state.failed) return ;
+                    match(input,RIGHT_PAREN,FOLLOW_RIGHT_PAREN_in_factor696); if (state.failed) return ;
 
                     }
                     break;
                 case 2 :
-                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:146:4: var
+                    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:148:4: var
                     {
-                    pushFollow(FOLLOW_var_in_factor686);
+                    pushFollow(FOLLOW_var_in_factor701);
                     var();
 
                     state._fsp--;
@@ -1533,9 +1535,9 @@ public class CMinusParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:147:4: call
+                    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:149:4: call
                     {
-                    pushFollow(FOLLOW_call_in_factor691);
+                    pushFollow(FOLLOW_call_in_factor706);
                     call();
 
                     state._fsp--;
@@ -1544,9 +1546,9 @@ public class CMinusParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:148:4: NUM
+                    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:150:4: NUM
                     {
-                    match(input,NUM,FOLLOW_NUM_in_factor696); if (state.failed) return ;
+                    match(input,NUM,FOLLOW_NUM_in_factor711); if (state.failed) return ;
 
                     }
                     break;
@@ -1565,20 +1567,20 @@ public class CMinusParser extends Parser {
 
 
     // $ANTLR start "call"
-    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:151:1: call : ID LEFT_PAREN args RIGHT_PAREN ;
+    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:153:1: call : ID LEFT_PAREN args RIGHT_PAREN ;
     public final void call() throws RecognitionException {
         try {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:152:2: ( ID LEFT_PAREN args RIGHT_PAREN )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:152:4: ID LEFT_PAREN args RIGHT_PAREN
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:154:2: ( ID LEFT_PAREN args RIGHT_PAREN )
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:154:4: ID LEFT_PAREN args RIGHT_PAREN
             {
-            match(input,ID,FOLLOW_ID_in_call711); if (state.failed) return ;
-            match(input,LEFT_PAREN,FOLLOW_LEFT_PAREN_in_call713); if (state.failed) return ;
-            pushFollow(FOLLOW_args_in_call715);
+            match(input,ID,FOLLOW_ID_in_call726); if (state.failed) return ;
+            match(input,LEFT_PAREN,FOLLOW_LEFT_PAREN_in_call728); if (state.failed) return ;
+            pushFollow(FOLLOW_args_in_call730);
             args();
 
             state._fsp--;
             if (state.failed) return ;
-            match(input,RIGHT_PAREN,FOLLOW_RIGHT_PAREN_in_call717); if (state.failed) return ;
+            match(input,RIGHT_PAREN,FOLLOW_RIGHT_PAREN_in_call732); if (state.failed) return ;
 
             }
 
@@ -1595,10 +1597,10 @@ public class CMinusParser extends Parser {
 
 
     // $ANTLR start "args"
-    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:155:1: args : ( argList | () );
+    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:157:1: args : ( argList | () );
     public final void args() throws RecognitionException {
         try {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:156:2: ( argList | () )
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:158:2: ( argList | () )
             int alt19=2;
             int LA19_0 = input.LA(1);
 
@@ -1617,9 +1619,9 @@ public class CMinusParser extends Parser {
             }
             switch (alt19) {
                 case 1 :
-                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:156:4: argList
+                    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:158:4: argList
                     {
-                    pushFollow(FOLLOW_argList_in_args732);
+                    pushFollow(FOLLOW_argList_in_args747);
                     argList();
 
                     state._fsp--;
@@ -1628,10 +1630,10 @@ public class CMinusParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:156:14: ()
+                    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:158:14: ()
                     {
-                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:156:14: ()
-                    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:156:15: 
+                    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:158:14: ()
+                    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:158:15: 
                     {
                     }
 
@@ -1653,18 +1655,18 @@ public class CMinusParser extends Parser {
 
 
     // $ANTLR start "argList"
-    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:159:1: argList : expression ( COMMA expression )* ;
+    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:161:1: argList : expression ( COMMA expression )* ;
     public final void argList() throws RecognitionException {
         try {
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:160:2: ( expression ( COMMA expression )* )
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:160:4: expression ( COMMA expression )*
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:162:2: ( expression ( COMMA expression )* )
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:162:4: expression ( COMMA expression )*
             {
-            pushFollow(FOLLOW_expression_in_argList754);
+            pushFollow(FOLLOW_expression_in_argList769);
             expression();
 
             state._fsp--;
             if (state.failed) return ;
-            // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:160:15: ( COMMA expression )*
+            // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:162:15: ( COMMA expression )*
             loop20:
             do {
                 int alt20=2;
@@ -1677,10 +1679,10 @@ public class CMinusParser extends Parser {
 
                 switch (alt20) {
             	case 1 :
-            	    // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:160:16: COMMA expression
+            	    // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:162:16: COMMA expression
             	    {
-            	    match(input,COMMA,FOLLOW_COMMA_in_argList757); if (state.failed) return ;
-            	    pushFollow(FOLLOW_expression_in_argList759);
+            	    match(input,COMMA,FOLLOW_COMMA_in_argList772); if (state.failed) return ;
+            	    pushFollow(FOLLOW_expression_in_argList774);
             	    expression();
 
             	    state._fsp--;
@@ -1710,10 +1712,10 @@ public class CMinusParser extends Parser {
 
     // $ANTLR start synpred1_CMinus
     public final void synpred1_CMinus_fragment() throws RecognitionException {   
-        // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:101:5: ( KEYWORD_ELSE )
-        // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:101:6: KEYWORD_ELSE
+        // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:103:5: ( KEYWORD_ELSE )
+        // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:103:6: KEYWORD_ELSE
         {
-        match(input,KEYWORD_ELSE,FOLLOW_KEYWORD_ELSE_in_synpred1_CMinus383); if (state.failed) return ;
+        match(input,KEYWORD_ELSE,FOLLOW_KEYWORD_ELSE_in_synpred1_CMinus398); if (state.failed) return ;
 
         }
     }
@@ -1721,15 +1723,15 @@ public class CMinusParser extends Parser {
 
     // $ANTLR start synpred2_CMinus
     public final void synpred2_CMinus_fragment() throws RecognitionException {   
-        // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:113:4: ( var EQUAL )
-        // /media/DATA/ACADEMIC/LEVEL4/Compiler Theory/project/cminus-parser (copy)/trunk/src/org/kasunbg/cminus/CMinus.g:113:5: var EQUAL
+        // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:115:4: ( var EQUAL )
+        // /home/kasun/cminus/trunk/src/org/kasunbg/cminus/CMinus.g:115:5: var EQUAL
         {
-        pushFollow(FOLLOW_var_in_synpred2_CMinus471);
+        pushFollow(FOLLOW_var_in_synpred2_CMinus486);
         var();
 
         state._fsp--;
         if (state.failed) return ;
-        match(input,EQUAL,FOLLOW_EQUAL_in_synpred2_CMinus473); if (state.failed) return ;
+        match(input,EQUAL,FOLLOW_EQUAL_in_synpred2_CMinus488); if (state.failed) return ;
 
         }
     }
@@ -1769,101 +1771,101 @@ public class CMinusParser extends Parser {
 
  
 
-    public static final BitSet FOLLOW_declarationList_in_program57 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_declaration_in_declarationList76 = new BitSet(new long[]{0x0000000000000602L});
-    public static final BitSet FOLLOW_varDeclaration_in_declaration90 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_funDeclaration_in_declaration94 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_varTypeSpecifier_in_varDeclaration110 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_ID_in_varDeclaration112 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_SEMICOLON_in_varDeclaration114 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_varTypeSpecifier_in_varDeclaration121 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_ID_in_varDeclaration123 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_LEFT_SQUARE_BRACKET_in_varDeclaration125 = new BitSet(new long[]{0x0000000000000080L});
-    public static final BitSet FOLLOW_NUM_in_varDeclaration127 = new BitSet(new long[]{0x0000000000000100L});
-    public static final BitSet FOLLOW_RIGHT_SQUARE_BRACKET_in_varDeclaration129 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_SEMICOLON_in_varDeclaration131 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KEYWORD_INT_in_varTypeSpecifier143 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_declarationList_in_program71 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_declaration_in_declarationList90 = new BitSet(new long[]{0x0000000000000602L});
+    public static final BitSet FOLLOW_varDeclaration_in_declaration105 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_funDeclaration_in_declaration109 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_varTypeSpecifier_in_varDeclaration125 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_ID_in_varDeclaration127 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_SEMICOLON_in_varDeclaration129 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_varTypeSpecifier_in_varDeclaration136 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_ID_in_varDeclaration138 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_LEFT_SQUARE_BRACKET_in_varDeclaration140 = new BitSet(new long[]{0x0000000000000080L});
+    public static final BitSet FOLLOW_NUM_in_varDeclaration142 = new BitSet(new long[]{0x0000000000000100L});
+    public static final BitSet FOLLOW_RIGHT_SQUARE_BRACKET_in_varDeclaration144 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_SEMICOLON_in_varDeclaration146 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_KEYWORD_INT_in_varTypeSpecifier158 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_set_in_funTypeSpecifier0 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_funTypeSpecifier_in_funDeclaration175 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_ID_in_funDeclaration177 = new BitSet(new long[]{0x0000000000000800L});
-    public static final BitSet FOLLOW_LEFT_PAREN_in_funDeclaration179 = new BitSet(new long[]{0x0000000000000600L});
-    public static final BitSet FOLLOW_params_in_funDeclaration181 = new BitSet(new long[]{0x0000000000001000L});
-    public static final BitSet FOLLOW_RIGHT_PAREN_in_funDeclaration183 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_compoundStmt_in_funDeclaration185 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_paramList_in_params200 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KEYWORD_VOID_in_params204 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_param_in_paramList217 = new BitSet(new long[]{0x0000000000002002L});
-    public static final BitSet FOLLOW_COMMA_in_paramList221 = new BitSet(new long[]{0x0000000000000200L});
-    public static final BitSet FOLLOW_param_in_paramList223 = new BitSet(new long[]{0x0000000000002002L});
-    public static final BitSet FOLLOW_varTypeSpecifier_in_param239 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_ID_in_param241 = new BitSet(new long[]{0x0000000000000042L});
-    public static final BitSet FOLLOW_LEFT_SQUARE_BRACKET_in_param245 = new BitSet(new long[]{0x0000000000000100L});
-    public static final BitSet FOLLOW_RIGHT_SQUARE_BRACKET_in_param247 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_LEFT_BRACE_in_compoundStmt262 = new BitSet(new long[]{0x00000000000DCAB0L});
-    public static final BitSet FOLLOW_localDeclarations_in_compoundStmt264 = new BitSet(new long[]{0x00000000000DC8B0L});
-    public static final BitSet FOLLOW_statementList_in_compoundStmt266 = new BitSet(new long[]{0x0000000000008000L});
-    public static final BitSet FOLLOW_RIGHT_BRACE_in_compoundStmt268 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_varDeclaration_in_localDeclarations281 = new BitSet(new long[]{0x0000000000000202L});
-    public static final BitSet FOLLOW_statement_in_statementList295 = new BitSet(new long[]{0x00000000000D48B2L});
-    public static final BitSet FOLLOW_expressionStmt_in_statement309 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_compoundStmt_in_statement314 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_selectionStmt_in_statement319 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_iterationStmt_in_statement324 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_returnStmt_in_statement329 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_expression_in_expressionStmt343 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_SEMICOLON_in_expressionStmt345 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_SEMICOLON_in_expressionStmt349 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KEYWORD_IF_in_selectionStmt366 = new BitSet(new long[]{0x0000000000000800L});
-    public static final BitSet FOLLOW_LEFT_PAREN_in_selectionStmt368 = new BitSet(new long[]{0x0000000000000890L});
-    public static final BitSet FOLLOW_expression_in_selectionStmt370 = new BitSet(new long[]{0x0000000000001000L});
-    public static final BitSet FOLLOW_RIGHT_PAREN_in_selectionStmt372 = new BitSet(new long[]{0x00000000000D48B0L});
-    public static final BitSet FOLLOW_statement_in_selectionStmt375 = new BitSet(new long[]{0x0000000000020002L});
-    public static final BitSet FOLLOW_KEYWORD_ELSE_in_selectionStmt388 = new BitSet(new long[]{0x00000000000D48B0L});
-    public static final BitSet FOLLOW_statement_in_selectionStmt391 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KEYWORD_WHILE_in_iterationStmt416 = new BitSet(new long[]{0x0000000000000800L});
-    public static final BitSet FOLLOW_LEFT_PAREN_in_iterationStmt418 = new BitSet(new long[]{0x0000000000000890L});
-    public static final BitSet FOLLOW_expression_in_iterationStmt420 = new BitSet(new long[]{0x0000000000001000L});
-    public static final BitSet FOLLOW_RIGHT_PAREN_in_iterationStmt422 = new BitSet(new long[]{0x00000000000D48B0L});
-    public static final BitSet FOLLOW_statement_in_iterationStmt424 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_KEYWORD_RETURN_in_returnStmt439 = new BitSet(new long[]{0x00000000000008B0L});
-    public static final BitSet FOLLOW_expression_in_returnStmt449 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_SEMICOLON_in_returnStmt454 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_var_in_expression478 = new BitSet(new long[]{0x0000000000100000L});
-    public static final BitSet FOLLOW_EQUAL_in_expression480 = new BitSet(new long[]{0x0000000000000890L});
-    public static final BitSet FOLLOW_expression_in_expression482 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_simpleExpression_in_expression488 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_in_var510 = new BitSet(new long[]{0x0000000000000042L});
-    public static final BitSet FOLLOW_LEFT_SQUARE_BRACKET_in_var514 = new BitSet(new long[]{0x0000000000000890L});
-    public static final BitSet FOLLOW_expression_in_var516 = new BitSet(new long[]{0x0000000000000100L});
-    public static final BitSet FOLLOW_RIGHT_SQUARE_BRACKET_in_var518 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_additiveExpression_in_simpleExpression537 = new BitSet(new long[]{0x000000007E000002L});
-    public static final BitSet FOLLOW_relop_in_simpleExpression540 = new BitSet(new long[]{0x0000000000000890L});
-    public static final BitSet FOLLOW_additiveExpression_in_simpleExpression542 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_funTypeSpecifier_in_funDeclaration190 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_ID_in_funDeclaration192 = new BitSet(new long[]{0x0000000000000800L});
+    public static final BitSet FOLLOW_LEFT_PAREN_in_funDeclaration194 = new BitSet(new long[]{0x0000000000000600L});
+    public static final BitSet FOLLOW_params_in_funDeclaration196 = new BitSet(new long[]{0x0000000000001000L});
+    public static final BitSet FOLLOW_RIGHT_PAREN_in_funDeclaration198 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_compoundStmt_in_funDeclaration200 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_paramList_in_params215 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_KEYWORD_VOID_in_params219 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_param_in_paramList232 = new BitSet(new long[]{0x0000000000002002L});
+    public static final BitSet FOLLOW_COMMA_in_paramList236 = new BitSet(new long[]{0x0000000000000200L});
+    public static final BitSet FOLLOW_param_in_paramList238 = new BitSet(new long[]{0x0000000000002002L});
+    public static final BitSet FOLLOW_varTypeSpecifier_in_param254 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_ID_in_param256 = new BitSet(new long[]{0x0000000000000042L});
+    public static final BitSet FOLLOW_LEFT_SQUARE_BRACKET_in_param260 = new BitSet(new long[]{0x0000000000000100L});
+    public static final BitSet FOLLOW_RIGHT_SQUARE_BRACKET_in_param262 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_LEFT_BRACE_in_compoundStmt277 = new BitSet(new long[]{0x00000000000DCAB0L});
+    public static final BitSet FOLLOW_localDeclarations_in_compoundStmt279 = new BitSet(new long[]{0x00000000000DC8B0L});
+    public static final BitSet FOLLOW_statementList_in_compoundStmt281 = new BitSet(new long[]{0x0000000000008000L});
+    public static final BitSet FOLLOW_RIGHT_BRACE_in_compoundStmt283 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_varDeclaration_in_localDeclarations296 = new BitSet(new long[]{0x0000000000000202L});
+    public static final BitSet FOLLOW_statement_in_statementList310 = new BitSet(new long[]{0x00000000000D48B2L});
+    public static final BitSet FOLLOW_expressionStmt_in_statement324 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_compoundStmt_in_statement329 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_selectionStmt_in_statement334 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_iterationStmt_in_statement339 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_returnStmt_in_statement344 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_expression_in_expressionStmt358 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_SEMICOLON_in_expressionStmt360 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_SEMICOLON_in_expressionStmt364 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_KEYWORD_IF_in_selectionStmt381 = new BitSet(new long[]{0x0000000000000800L});
+    public static final BitSet FOLLOW_LEFT_PAREN_in_selectionStmt383 = new BitSet(new long[]{0x0000000000000890L});
+    public static final BitSet FOLLOW_expression_in_selectionStmt385 = new BitSet(new long[]{0x0000000000001000L});
+    public static final BitSet FOLLOW_RIGHT_PAREN_in_selectionStmt387 = new BitSet(new long[]{0x00000000000D48B0L});
+    public static final BitSet FOLLOW_statement_in_selectionStmt390 = new BitSet(new long[]{0x0000000000020002L});
+    public static final BitSet FOLLOW_KEYWORD_ELSE_in_selectionStmt403 = new BitSet(new long[]{0x00000000000D48B0L});
+    public static final BitSet FOLLOW_statement_in_selectionStmt406 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_KEYWORD_WHILE_in_iterationStmt431 = new BitSet(new long[]{0x0000000000000800L});
+    public static final BitSet FOLLOW_LEFT_PAREN_in_iterationStmt433 = new BitSet(new long[]{0x0000000000000890L});
+    public static final BitSet FOLLOW_expression_in_iterationStmt435 = new BitSet(new long[]{0x0000000000001000L});
+    public static final BitSet FOLLOW_RIGHT_PAREN_in_iterationStmt437 = new BitSet(new long[]{0x00000000000D48B0L});
+    public static final BitSet FOLLOW_statement_in_iterationStmt439 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_KEYWORD_RETURN_in_returnStmt454 = new BitSet(new long[]{0x00000000000008B0L});
+    public static final BitSet FOLLOW_expression_in_returnStmt464 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_SEMICOLON_in_returnStmt469 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_var_in_expression493 = new BitSet(new long[]{0x0000000000100000L});
+    public static final BitSet FOLLOW_EQUAL_in_expression495 = new BitSet(new long[]{0x0000000000000890L});
+    public static final BitSet FOLLOW_expression_in_expression497 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_simpleExpression_in_expression503 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ID_in_var525 = new BitSet(new long[]{0x0000000000000042L});
+    public static final BitSet FOLLOW_LEFT_SQUARE_BRACKET_in_var529 = new BitSet(new long[]{0x0000000000000890L});
+    public static final BitSet FOLLOW_expression_in_var531 = new BitSet(new long[]{0x0000000000000100L});
+    public static final BitSet FOLLOW_RIGHT_SQUARE_BRACKET_in_var533 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_additiveExpression_in_simpleExpression552 = new BitSet(new long[]{0x000000007E000002L});
+    public static final BitSet FOLLOW_relop_in_simpleExpression555 = new BitSet(new long[]{0x0000000000000890L});
+    public static final BitSet FOLLOW_additiveExpression_in_simpleExpression557 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_set_in_relop0 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_term_in_additiveExpression595 = new BitSet(new long[]{0x0000000000600002L});
-    public static final BitSet FOLLOW_addop_in_additiveExpression598 = new BitSet(new long[]{0x0000000000000890L});
-    public static final BitSet FOLLOW_term_in_additiveExpression600 = new BitSet(new long[]{0x0000000000600002L});
+    public static final BitSet FOLLOW_term_in_additiveExpression610 = new BitSet(new long[]{0x0000000000600002L});
+    public static final BitSet FOLLOW_addop_in_additiveExpression613 = new BitSet(new long[]{0x0000000000000890L});
+    public static final BitSet FOLLOW_term_in_additiveExpression615 = new BitSet(new long[]{0x0000000000600002L});
     public static final BitSet FOLLOW_set_in_addop0 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_factor_in_term632 = new BitSet(new long[]{0x0000000001800002L});
-    public static final BitSet FOLLOW_mulop_in_term635 = new BitSet(new long[]{0x0000000000000890L});
-    public static final BitSet FOLLOW_factor_in_term637 = new BitSet(new long[]{0x0000000001800002L});
+    public static final BitSet FOLLOW_factor_in_term647 = new BitSet(new long[]{0x0000000001800002L});
+    public static final BitSet FOLLOW_mulop_in_term650 = new BitSet(new long[]{0x0000000000000890L});
+    public static final BitSet FOLLOW_factor_in_term652 = new BitSet(new long[]{0x0000000001800002L});
     public static final BitSet FOLLOW_set_in_mulop0 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_LEFT_PAREN_in_factor677 = new BitSet(new long[]{0x0000000000000890L});
-    public static final BitSet FOLLOW_expression_in_factor679 = new BitSet(new long[]{0x0000000000001000L});
-    public static final BitSet FOLLOW_RIGHT_PAREN_in_factor681 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_var_in_factor686 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_call_in_factor691 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_NUM_in_factor696 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_in_call711 = new BitSet(new long[]{0x0000000000000800L});
-    public static final BitSet FOLLOW_LEFT_PAREN_in_call713 = new BitSet(new long[]{0x0000000000001890L});
-    public static final BitSet FOLLOW_args_in_call715 = new BitSet(new long[]{0x0000000000001000L});
-    public static final BitSet FOLLOW_RIGHT_PAREN_in_call717 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_argList_in_args732 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_expression_in_argList754 = new BitSet(new long[]{0x0000000000002002L});
-    public static final BitSet FOLLOW_COMMA_in_argList757 = new BitSet(new long[]{0x0000000000000890L});
-    public static final BitSet FOLLOW_expression_in_argList759 = new BitSet(new long[]{0x0000000000002002L});
-    public static final BitSet FOLLOW_KEYWORD_ELSE_in_synpred1_CMinus383 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_var_in_synpred2_CMinus471 = new BitSet(new long[]{0x0000000000100000L});
-    public static final BitSet FOLLOW_EQUAL_in_synpred2_CMinus473 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_LEFT_PAREN_in_factor692 = new BitSet(new long[]{0x0000000000000890L});
+    public static final BitSet FOLLOW_expression_in_factor694 = new BitSet(new long[]{0x0000000000001000L});
+    public static final BitSet FOLLOW_RIGHT_PAREN_in_factor696 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_var_in_factor701 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_call_in_factor706 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_NUM_in_factor711 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ID_in_call726 = new BitSet(new long[]{0x0000000000000800L});
+    public static final BitSet FOLLOW_LEFT_PAREN_in_call728 = new BitSet(new long[]{0x0000000000001890L});
+    public static final BitSet FOLLOW_args_in_call730 = new BitSet(new long[]{0x0000000000001000L});
+    public static final BitSet FOLLOW_RIGHT_PAREN_in_call732 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_argList_in_args747 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_expression_in_argList769 = new BitSet(new long[]{0x0000000000002002L});
+    public static final BitSet FOLLOW_COMMA_in_argList772 = new BitSet(new long[]{0x0000000000000890L});
+    public static final BitSet FOLLOW_expression_in_argList774 = new BitSet(new long[]{0x0000000000002002L});
+    public static final BitSet FOLLOW_KEYWORD_ELSE_in_synpred1_CMinus398 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_var_in_synpred2_CMinus486 = new BitSet(new long[]{0x0000000000100000L});
+    public static final BitSet FOLLOW_EQUAL_in_synpred2_CMinus488 = new BitSet(new long[]{0x0000000000000002L});
 
 }

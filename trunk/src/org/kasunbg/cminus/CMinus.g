@@ -1,4 +1,6 @@
 /**
+ * Copyright 2011 Kasun Gajasinghe
+ * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -14,23 +16,23 @@
 */
 
 grammar CMinus;
-
+ 
 options {
   language = Java;
 }   
-  
+    
 @header {
   package org.kasunbg.cminus; 
 }
-
-@lexer::header { 
+    
+@lexer::header {  
   package org.kasunbg.cminus;  
 }
- 
+      
 /*-------------------------------------------------------------------
  * PARSER RULES
  *-----------------------------------------------------------------*/
-  
+    
 program  
 	:	 declarationList
 	;		 
@@ -38,7 +40,7 @@ program
 declarationList	 
 	:	declaration+
 	; 
-
+ 
 declaration	
 	:	varDeclaration | funDeclaration
 	;
