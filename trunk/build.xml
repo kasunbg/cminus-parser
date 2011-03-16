@@ -41,8 +41,9 @@ compilation, jar creation and running of the tests -->
 		<javac srcdir="${src.dir}" destdir="${classes.dir}">
 			<classpath refid="base.path" />
 		</javac>
-		<copydir dest="${build.dir}/lib" src="lib">
-		</copydir>
+		<copy todir="${build.dir}/lib">
+			<fileset dir="lib"/>
+		</copy>
 	</target>
 	<target name="jar" depends="compile">
 		<mkdir dir="${jar.dir}" />
